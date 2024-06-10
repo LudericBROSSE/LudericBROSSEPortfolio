@@ -8,7 +8,7 @@
   border: none;
   outline: none;
   scroll-behavior: smooth;
-  font-family: 'Poppins', sans-serif;
+  font-family: Arial, sans-serif;
 }
 
 :root {
@@ -28,15 +28,15 @@ body {
   color: var(--text-color);
 }
 
- h4 {
-   font-size: 2rem
- }
-
 sectionheader {
   min-height: 100vh;
   padding: 10rem 9% 2rem;
 }
 
+h4 {
+  font-size: 1.5em;
+  font-family: arial, sans-serif;
+}
 .header {
   position: fixed;
   top: 0;
@@ -48,6 +48,7 @@ sectionheader {
   justify-content: space-between;
   align-items: center;
   z-index: 100;
+  
 }
 
 .header.sticky {
@@ -61,12 +62,14 @@ sectionheader {
   cursor: default;
 }
 
+
 /* Styles de base pour les liens de la navbar */
 .navbar a {
-  font-size: 1.7rem;
+  font-size: 17px;
   color: var(--text-color);
   margin-left: 4rem;
   transition: .3s;
+  font-family: arial,sans-serif;
 }
 
 /* Style pour les liens de la navbar lorsqu'ils sont survolés ou actifs */
@@ -82,23 +85,27 @@ sectionheader {
   display: none;
 }
 
-p2 {
+.p2 {
   color: #000000;
   font-size: 1.5rem;
   margin: 1rem 0 2rem;
   text-align: center;
+  font-family: arial,sans-serif;
 }
 
 section.home {
   min-height: 100vh;
   padding: 10rem 9% 2rem;
-  ;
+  font-family: arial,sans-serif;
+  font-size: 23px;
 }
 
 .home {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: arial, sans-serif;
+  font-size: 23px;
 }
 
 .home-img img {
@@ -187,6 +194,8 @@ span {
   align-items: center;
   gap: 2rem;
   background-color: var(--second-color);
+  font-family: Arial,sans-serif;
+  font-size: 23px;
 }
 
 .about-img img {
@@ -201,20 +210,23 @@ span {
 
 .about-content h2 {
   text-align: left;
-  font-size: 1.2;
+  font-size: 32px;
   font-weight: 700;
+  font-family: arial,sans-serif;
 }
 
 .about-content h3 {
-  font-size: 2.6rem;
+  font-size: 45px;
   font-weight: 500;
   text-align: center;
+  font-family: arial, sans-serif;
 }
 
 .about-content p {
-  font-size: 1.6rem;
+  font-size: 23px;
   margin: 2rem 0 3rem;
   text-align: center;
+  font-family: Arial, sans-serif;
 }
 
 /* Style pour encadrer la section */
@@ -223,6 +235,7 @@ span {
   padding: 1rem; 
   margin: -10px 0 0 0; /* Réduire la marge inférieure */
   border-radius: 10px;
+  font-family: arial, sans-serif;
 }
 
 /* Style pour les titres */
@@ -240,8 +253,9 @@ p {
 }
 
 .about-layer a i {
-  font-size: 2rem;
+  font-size: 23px;
   color: var(--second-bg-color);
+  font-family: arial , sans-serif;
 }
 
 .portfolio {
@@ -265,8 +279,11 @@ p {
   overflow: hidden;
   box-shadow: 0 0 1rem var(--bg-color);
   display: flex;
+  font-size: 23px;
+  font-family: Arial , sans-serif;
 
 }
+
 
 .portfolio-box img {
   width: 100%;
@@ -295,6 +312,7 @@ p {
   padding: 0 4rem;
   transform: translateY(100%);
   transition: .5s ease;
+  font-size: 35px;
 }
 
 .portfolio-box:hover .portfolio-layer {
@@ -302,7 +320,13 @@ p {
 }
 
 .portfolio-box .portfolio-layer h4 {
-  font-size: 3rem;
+  font-size: 45px;
+  color: var(--main-color);
+}
+
+.portfolio-box .portfolio-layer h3 {
+  font-size: 45px;
+
 }
 
 .portfolio-container .portfolio-box2 {
@@ -355,8 +379,9 @@ p {
 /* a la j ai chercher pour ca y a des commentaire */
 
 .portfolio-layer p {
-  font-size: 1.6rem;
+  font-size: 28px;
   margin: .3rem 0 1rem;
+  font-family: arial, sans-serif;
 }
 
 .portfolio-layer a {
@@ -425,16 +450,26 @@ p {
   justify-content: center;
   align-items: center;
   padding: .8rem;
-  background: var(--main-color);
   border-radius: .8rem;
 }
 
-.footer-iconTop a i {
-  font-size: 2.4rem;
-  color: var(--second-bg-color);
+.contact a {
+  font-size: 23px;
+  font-family: arial, sans-serif;
+
 }
 
+.insta{
+  margin-right: auto;
+}
 
+.linkedin{
+  margin:auto
+}
+
+.mail{
+  margin-left: auto;
+}
 /* Style pour tout les medias */
 
 

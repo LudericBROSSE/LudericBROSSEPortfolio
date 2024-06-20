@@ -52,7 +52,7 @@ h4 {
 }
 
 .header.sticky {
-  border-bottom: .1rem solid rgba(0, 0, 0, .2);
+  border-bottom: .1rem solid rgba(0, 0, 0, 0.2);
 }
 
 .logo {
@@ -106,6 +106,8 @@ section.home {
   align-items: center;
   font-family: arial, sans-serif;
   font-size: 23px;
+  margin-left: 2%;
+  margin-right: 2%;
 }
 
 .home-img img {
@@ -123,7 +125,7 @@ section.home {
 }
 
 span {
-  color: #5089d3;
+  color: var(--main-color);
 }
 
 .home-content h1 {
@@ -208,6 +210,12 @@ span {
   font-size: 4.5rem;
 }
 
+
+.about-content{
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
 .about-content h2 {
   text-align: left;
   font-size: 32px;
@@ -231,16 +239,20 @@ span {
 
 /* Style pour encadrer la section */
 .Mon_parcours {
-  border: 2px solid #0ef;
+  border: 2px solid var(--main-color);
   padding: 1rem; 
   margin: -10px 0 0 0; /* Réduire la marge inférieure */
-  border-radius: 10px;
   font-family: arial, sans-serif;
+}
+
+.Mon_parcours-contenue{
+  margin-left: 2%;
+  margin-right: 2%;
 }
 
 /* Style pour les titres */
 h3 {
-  color: #3498db;
+  color:var(--main-color);
   /* Couleur du texte du titre */
   font-size: 27px;
 }
@@ -275,7 +287,6 @@ p {
 
 .portfolio-container .portfolio-box {  /*pour le portfolio sa commence la les boxe  */
   position: relative;
-  border-radius: 2rem;
   overflow: hidden;
   box-shadow: 0 0 1rem var(--bg-color);
   display: flex;
@@ -284,10 +295,13 @@ p {
 
 }
 
+.texte_portfolio p {
+  margin-left: 1%;
+  margin-right: 1%;
+}
 
 .portfolio-box img {
   width: 100%;
-  border-radius: 2rem;
   transition: .5s ease;
   
 }
@@ -321,7 +335,7 @@ p {
 
 .portfolio-box .portfolio-layer h4 {
   font-size: 45px;
-  color: var(--main-color);
+  color: #e70a0a;
 }
 
 .portfolio-box .portfolio-layer h3 {
@@ -329,9 +343,22 @@ p {
 
 }
 
+h5{
+  color: #fff ;
+
+}
+
+h6{
+  color: red;
+  font-size: 45px;
+}
+
+h7{
+  color: purple;
+  font-size: 45px ;
+}
 .portfolio-container .portfolio-box2 {
   position: relative;
-  border-radius: 2rem;
   overflow: hidden;
   box-shadow: 0 0 1rem var(--bg-color);
   display: flex;
@@ -340,7 +367,6 @@ p {
 
 .portfolio-container .portfolio-box2 {
   position: relative;
-  border-radius: 2rem;
   overflow: hidden;
   box-shadow: 0 0 1rem var(--bg-color);
   display: flex;
@@ -348,12 +374,11 @@ p {
 
 .portfolio-box2 video {
   width: 100%;
-  border-radius: 2rem;
   transition: .5s ease;
 }
 
 .portfolio-box2:hover {
-  background-color: rgba(0, 0, 255, 0.3);  /* Couleur bleue quasi transparente sur le survol */
+  background-color: var(--main-color-);  /* Couleur bleue quasi transparente sur le survol */
 }
 
 .portfolio-box2 .portfolio-layer {
@@ -382,6 +407,7 @@ p {
   font-size: 28px;
   margin: .3rem 0 1rem;
   font-family: arial, sans-serif;
+  color: #000000;
 }
 
 .portfolio-layer a {
@@ -423,7 +449,7 @@ p {
   font-size: 1.6rem;
   color: var(--text-color);
   background: var(--second-color);
-  border-radius: .8rem;
+ 
   margin: .7rem 0;
 
 }
@@ -450,27 +476,40 @@ p {
   justify-content: center;
   align-items: center;
   padding: .8rem;
-  border-radius: .8rem;
 }
 
-.contact a {
-  font-size: 23px;
-  font-family: arial, sans-serif;
-
+.Contact {
+  text-align: center; /* Centre le contenu de la section horizontalement */
 }
 
-.insta{
-  margin-right: auto;
+
+.Contact {
+  text-align: center; /* Centre le contenu de la section horizontalement */
 }
 
-.linkedin{
-  margin:auto
+.social-icons {
+  display: flex; /* Utilisation du flexbox pour aligner les éléments sur une ligne */
+  justify-content: center; /* Centre les éléments horizontalement */
 }
 
-.mail{
-  margin-left: auto;
+.social-icons .icon {
+  margin: 0 20px; /* Marge entre chaque icône */
 }
-/* Style pour tout les medias */
+
+.social-icons .icon a {
+  display: block; /* Affiche les liens en tant que bloc pour mieux aligner les icônes */
+  text-align: center; /* Centre le contenu du lien */
+  font-size: 72px; /* Taille de la police des icônes (double de la taille initiale) */
+  color: #ffffff; /* Couleur de base des icônes (blanc ici) */
+  transition: color 0.3s ease; /* Transition douce de la couleur pendant 0.3s */
+}
+
+/* Effet hover pour changer la couleur au survol */
+.social-icons .icon a:hover {
+  color: var(--main-color); /* Changement de couleur au survol vers la couleur principale */
+}
+
+
 
 
 @media(max-width: 1200px) {

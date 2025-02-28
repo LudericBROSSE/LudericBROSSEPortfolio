@@ -1,48 +1,297 @@
-/*-------le menue deroulant--------------------------------------*/
+<!DOCTYPE html> 
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Portfolio Luderic Brosse</title>
+    <!-- CSS de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- JS de Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+<body>
+  <section class="header">
+    <header class="header">
+      <a href="#" class="logo">Portfolio</a>
+      <i class='bx bx-menu' id="menu-icon"></i>
+      <nav class="navbar">
+        <a href="#home" class="active">Accueil</a>
+        <a href="#Qui_suis_je">Qui suis-je?</a>
+        <a href="#Mon_parcours">Mon parcours</a>
+        <a href="#portfolio"> Mon portfolio</a>
+        <a href="#Contact">Me contacter</a>
+      </nav>
+    </header>
+  </section>
+  <section class="home" id="home">
+    <div class="home-content">
+      <h1>Bienvenue sur mon portfolio!</h1>
+      <h1><span>Luderic BROSSE</span></h1>
+      <h2><span>étudiant en 1ére année en </span> BUT Réseaux et Télécommunications</h2>
+      <p><span>N'hésitez pas à vous balader sur mon portfolio pour découvrir mes exploits dans le domaine de l'informatique et mieux me connaitre </span></p>
+      <div class="social-media">
+        <a href="https://www.instagram.com/luderic_brosse_/" target="_blank"><i class='bx bxl-instagram bx-flip-horizontal bx-burst' ></i></a>
+        <a href="https://www.linkedin.com/in/ludericbrosse/" target="_blank" ><i class='bx bxl-linkedin-square bx-fade-left' ></i></a>
+      </div>
+      <a href="CV_Luderic_BROSSE.pdf" class="btn">Télécharger mon CV</a>
+    </div>
+    <div class="home-img-cerlce">
+      <img src="photo_chemise1.jpg" alt="photo disponible sur mon CV et sur linkedin">
+    </div>
+  </section>
+  <section class="Qui_suis_je" id="Qui_suis_je">
+    <div class="title">
+      <h2 class="title-text">Qui suis-je?</h2>
+    </div>
+    <div class="about-content">
+        <div class="about-text">
+          <p>Je suis Luderic BROSSE, étudiant en première année de BUT Réseaux et Télécommunications. 
+            Passionné par l'informatique depuis mon plus jeune âge, j'ai développée des compétences en 
+            autodidacte, en particulier en programmation. Originaire de la Polynésie Française, 
+            j'ai toujours été fasciné par les technologies, devenant un pionnier dans mon environnement 
+            local.</p>
+          <br>
+          <p>En dehors de mes études, j'aime voyager en mer et faire de la plonger sous-marine, des 
+            passions que j'ai cultivées grâce à mes expériences en Polynésie. J'ai également un grand 
+            intérêt pour les animaux, transmis par mon père.</p>
+          <br><p>Curieux, passionné et déterminé, je cherche toujours à relever de nouveaux défis et 
+            à apprendre de nouvelles compétences.</p>
+        </div>
+        <div class="about-img">
+            <img src="photochien.jpg" alt="photo disponible">
+        </div>
+    </div>
+</section>
+<section class="Mon_parcours" id="Mon_parcours">
+  <div class="title">
+    <h2 class="title-text">Mon parcours</h2>
+  </div>
+  <div class="content">
+    <p>Actuellement étudiant en première année de BUT Réseaux et Télécommunications, je me spécialise 
+      dans le développement et l'administration des réseaux. Depuis mon enfance, l'informatique me 
+      passionne, et j'ai cultivé cette passion en autodidacte, notamment dans le domaine de la 
+      programmation. Originaire de la Polynésie Française, j'ai eu l'opportunité d'explorer cet 
+      univers technologique dans un environnement où peu de personnes étaient qualifiées, ce qui 
+      m'a permis de devenir un pionnier auprès de mes pairs.</p> 
+    <p>Après l'obtention de mon BAC STI2D, option <a class="SIN" href="https://oniseptv.onisep.fr/video/bac-techno-sti2d-specialite-systeme-dinformation-et-numerique-sin" >Système d'Information et Numérique </a>(SIN), j'ai 
+        choisi de poursuivre mes études en BUT Réseaux et Télécommunications pour approfondir mes 
+        connaissances, en particulier dans le domaine de la cybersécurité et des infrastructures 
+        réseaux. Mon parcours a été marqué par un redoublement, une expérience qui m'a permis de 
+        découvrir ma passion pour la création et l'administration des réseaux.</p> 
+    <p>En dehors de mes études, je suis passionné par les voyages en mer et la plongée sous-marine, 
+      des activités que j'ai découvertes en Polynésie et qui occupent une place importante dans ma vie.
+       J'ai également un intérêt marqué pour les animaux, une passion que j'ai héritée de mon père.</p>
+    <p>Curieux, passionné et déterminé, je suis constamment à la recherche de nouveaux défis et 
+      d'opportunités d'apprentissage. C'est pourquoi je suis particulièrement intéressé par une 
+      lternance dans le domaine des infrastructures de réseaux, tout en étant ouvert à des missions 
+      de développement. Mon portfolio témoigne de mon parcours et de ma volonté de progresser dans ce 
+      domaine.</p>
+  </div>
+  <br>
+  <div class="timeline">
+    <div class="timeline-content">
+      <div class="content">
+        <h3>2022-2023</h3>
+        <p>Baccalauréat STI2D, spécialité SIN, mention Assez Bien, Lycée AMJ Uturoa Polynésie Française</p>
+      </div>
+    </div>
+    <div class="timeline-content">
+      <div class="content">
+        <h3>2023-2024</h3>
+        <p>1er année au BUT R&T soldée par un redoublement , IUT de Nice cote d'azur antennes de Valbonnes</p>
+      </div>
+    </div>
+    <div class="timeline-content">
+      <div class="content">
+        <h3>2024-2027</h3>
+        <p>BUT Réseaux et Télécommunications, IUT de Nice cote d'azur antennes de Valbonnes</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="portfolio" id="portfolio">
+  <div class="title">
+    <h2 class="title-text">Mon portfolio</h2>
+  </div>
 
-let menuIcon = document.querySelector('#menu-icon');
-let navbar = document.querySelector('.navbar');
+  <div class="container text-center mt-5">
+    <!-- Première image avec titre et description -->
+    <div class="portfolio-item">
+      <img src="../Portfolio/Reseaux.jpg" alt="Cliquer pour ouvrir" class="clickable-image img-fluid" data-bs-toggle="modal" data-bs-target="#imageModal1">
+      <div class="portfolio-caption">
+        <h2>En Réseaux</h2>
+        <p>Ici vous retrouverez tous mes projets réaliser dans la confection et l'administration de <span>réseaux</span></p>
+      </div>
+    </div>
+  </div>
 
-menuIcon.onclick = () => {
-  menuIcon.classList.toggle('bx-x');
-  navbar.classList.toggle('active');
-}
+  <div class="container text-center mt-5">
+    <!-- Deuxième image avec titre et description -->
+    <div class="portfolio-item">
+      <img src="../Portfolio/info.jpg" alt="Cliquer pour ouvrir" class="clickable-image img-fluid" data-bs-toggle="modal" data-bs-target="#imageModal2">
+      <div class="portfolio-caption">
+        <h2>En Développerment</h2>
+        <p>Ici vous aller retrouver tous les <span>site</span> et les petits <span>script</span> que j'ai réaliser jusqu'a maintenant</p>
+      </div>
+    </div>
+  </div>
 
-/*------L'onglet alumer change en changeant de rubrique --------*/
+  <div class="container text-center mt-5">
+    <!-- Troisième image avec titre et description -->
+    <div class="portfolio-item">
+      <img src="../Portfolio/telecom.jpg" alt="Cliquer pour ouvrir" class="clickable-image img-fluid" data-bs-toggle="modal" data-bs-target="#imageModal3">
+      <div class="portfolio-caption">
+        <h2>En Télécommunications</h2>
+        <p>Ici vous aller retrouver tous les projet réaliser dans le domaine de la <span>Télécommunications</span></p>
+      </div>
+    </div>
+  </div>
 
-let section = document.querySelectorAll('section');
-let navLinks = document.querySelectorAll('header .navbar a');
+<!-- Modal 1 -->
+<div class="modal fade" id="imageModal1" tabindex="-1" aria-labelledby="imageModalLabel1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="imageModalLabel1">Galerie d'images</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div id="carouselExample1" class="carousel slide" data-bs-ride="false" data-bs-interval="false"> <!-- Désactivation complète -->
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="d-flex w-100">
+                <div class="carousel-caption">
+                  <h5>Titre Image 1 Carrousel</h5>
+                  <p>Description courte Image 1 Carrousel</p>
+                </div>
+                <img src="../Portfolio/lan.jpg" class="d-block" alt="Image 1">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="d-flex w-100">
+                <div class="carousel-caption">
+                  <h5>Titre Image 2 Carrousel</h5>
+                  <p>Description courte Image 2 Carrousel</p>
+                </div>
+                <img src="../Portfolio/info.jpg" class="d-block" alt="Image 2">
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample1" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample1" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
-window.onscroll= () => {
-  section.forEach(sec => {
-    let top = window.scrollY;
-    let offset = sec.offsetTop -150;
-    let height = sec.offsetHeight;
-    let id = sec.getAttribute('id');
-  
-    if(top >= offset && top < offset + height){
-      navLinks.forEach(links => {
-        links.classList.remove('active');
-        document.querySelector('header .navbar a[href*=' + id + ']').classList.add('active');
-      })
-    }
-  })
-/*------ --------------Petit menue----------------------- ------*/
-  let header = document.querySelector('header');
 
-  header.classList.toggle('sticky', window.scrollY > 100);
-}
-/*------Le menue deroulant se ferme en changeant de menue ------*/
 
-menuIcon.classList.remove('bx-x');
-navbar.classList.remove('active ');
+  <!-- Modal 2 -->
+  <div class="modal fade" id="imageModal2" tabindex="-1" aria-labelledby="imageModalLabel2" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="imageModalLabel2">Galerie d'images</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div id="carouselExample2" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="../Portfolio/lan.jpg" class="d-block w-100" alt="Image 1">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Titre Image 1 Carrousel</h5>
+                  <p>Description courte Image 1 Carrousel</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="../Portfolio/info.jpg" class="d-block w-100" alt="Image 2">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Titre Image 2 Carrousel</h5>
+                  <p>Description courte Image 2 Carrousel</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample2" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample2" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-/*------barre d avancement ------*/
-ScrollReveal({ 
-  reset: true,
-  distance: '80px',
-  duration: 2000, // Correction de la faute de frappe dans "duration"
-  delay: 200
-});
+  <!-- Modal 3 -->
+  <div class="modal fade" id="imageModal3" tabindex="-1" aria-labelledby="imageModalLabel3" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="imageModalLabel3">Galerie d'images</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div id="carouselExample3" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="../Portfolio/lan.jpg" class="d-block w-100" alt="Image 1">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Titre Image 1 Carrousel</h5>
+                  <p>Description courte Image 1 Carrousel</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="../Portfolio/info.jpg" class="d-block w-100" alt="Image 2">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Titre Image 2 Carrousel</h5>
+                  <p>Description courte Image 2 Carrousel</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample3" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample3" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-ScrollReveal().reveal('.home-content, .heading', { origin: 'top' }); // Ajout de la propriété "origin" avec la valeur 'top'
+</section>
+
+<section class="Contact" id="Contact">
+  <div class="title">
+    <h2 class="title-text">Me contacter</h2>
+  </div>
+  <div class="contact-content">
+    <div class="contact-info">
+      <h2>Informations de contact</h2>
+      <p><i class='bx bx-phone-call'></i> +33 6 58 50 30 41</p>
+      <div class="social-icons">
+        <div class="icon insta"><a href="https://www.instagram.com/luderic_brosse_/" target="_blank"><i class='bx bxl-instagram'></i></a></div>
+        <div class="icon linkedin"><a href="https://www.linkedin.com/in/ludericbrosse/" target="_blank"><i class='bx bxl-linkedin'></i></a></div>
+        <div class="icon mail"><a href="mailto:proludericbrosse@gmail.com" target="_blank"><i class='bx bx-envelope'></i></a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <footer class="footer">
+      <div class="footer-text">
+        <p>Copyright &copy; 2024 par Luderic BROSSE</p>
+      </div>
+    </footer>
+
+<script src="Java_ma_page.js"></script>
+</body>

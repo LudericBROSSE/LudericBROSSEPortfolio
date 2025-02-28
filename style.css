@@ -28,10 +28,7 @@ body {
   color: var(--text-color);
 }
 
-sectionheader {
-  min-height: 100vh;
-  padding: 10rem 9% 2rem;
-}
+
 
 h4 {
   font-size: 1.5em;
@@ -63,7 +60,7 @@ h4 {
 }
 
 
-/* Styles de base pour les liens de la navbar */
+
 .navbar a {
   font-size: 17px;
   color: var(--text-color);
@@ -72,537 +69,345 @@ h4 {
   font-family: arial,sans-serif;
 }
 
-/* Style pour les liens de la navbar lorsqu'ils sont survolés ou actifs */
+
 .navbar a:hover,
 .navbar a.active {
   color: var(--main-color);
 }
 
-/* Styles pour l'icône du menu */
+
 #menu-icon {
   font-size: 3.6rem;
   color: var(--text-color);
   display: none;
 }
 
-.p2 {
-  color: #000000;
-  font-size: 1.5rem;
-  margin: 1rem 0 2rem;
-  text-align: center;
-  font-family: arial,sans-serif;
-}
-
-section.home {
-  min-height: 100vh;
-  padding: 10rem 9% 2rem;
-  font-family: arial,sans-serif;
-  font-size: 23px;
-}
-
 .home {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  font-family: arial, sans-serif;
-  font-size: 23px;
-  margin-left: 2%;
-  margin-right: 2%;
+  height: 100vh;
+  padding: 0 9%;
 }
 
-.home-img img {
-  width: 35vw;
+.home h1 {
+  font-size: 4rem;
+  font-weight: 800;
+  line-height: 1.2;
 }
 
-.home-content h3 {
-  font-size: 3.2rem;
-  font-weight: 700;
-  color: var(--text-color);
-}
+.home h1 span {
+    font-size: 6rem;
+    font-weight: 800;
+    line-height: 1.2;
+    color: var(--main-color);
+  }
+.home-img-cerlce {
+    width: 40vw;
+    height: 35vw;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-.home-content h3:nth-of-type(2) {
-  margin-bottom: 2rem;
-}
-
-span {
-  color: var(--main-color);
-}
-
-.home-content h1 {
-  font-size: 5.6rem;
-  font-weight: 700;
-  line-height: 1.3;
+.home-img-cerlce img {
+    width: 100%;
+    min-height: 100%;
+    object-fit: cover;
 }
 
 .social-media a {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  width: 4rem;
-  height: 4rem;
-  background: transparent;
-  border: .2rem solid var(--main-color);
-  border-radius: 50%;
-  font-size: 2rem;
-  color: var(--main-color);
-  margin: 3rem 1.5rem 3rem 0;
-  transition: .5s ease;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background: transparent;
+    border: .2rem solid var(--main-color);
+    border-radius: 50%;
+    font-size: 2rem;
+    color: var(--main-color);
+    margin: 3rem 1.5rem 3rem 0;
+    transition: .5s ease;
 }
-
+  
 .social-media a:hover {
-  background: var(--main-color);
-  color: var(--second-color);
-  box-shadow: 0 0 1rem var(--main-color);
+    background: var(--main-color);
+    color: var(--second-color);
+    box-shadow: 0 0 1rem var(--main-color);
 }
 
 .btn {
-  display: inline-block;
-  padding: 1rem 2.8rem;
-  background: var(--main-color);
-  border-radius: 4rem;
-  box-shadow: 0 0 1rem var(--main-color);
-  font-size: 1.6rem;
-  color: var(--second-color);
-  letter-spacing: .1rem;
-  font-weight: 600;
-  transition: .5s ease;
+    display: inline-block;
+    padding: 1rem 2rem;
+    background: var(--main-color);
+    color: var(--second-color);
+    font-size: 1.6rem;
+    font-weight: 600;
+    border-radius: 2rem;
+    margin-top: 2rem;
+    transition: .5s;
 }
 
 .btn:hover {
-  box-shadow: none;
+    background: var(--second-color);
+    color: var(--main-color);
+}
+.home p{
+    font-size: 1.5rem;
 }
 
-.btn1 {
-  display: inline-block;
-  padding: 1rem 2.8rem;
-  background: var(--main-color);
-  border-radius: 4rem;
-  box-shadow: 0 0 1rem var(--main-color);
-  font-size: 1.6rem;
-  color: var(--second-color);
-  letter-spacing: .1rem;
-  font-weight: 600;
-  transition: .5s ease;
-  margin-left: 65rem;
-  
+.title-text {
+    font-weight: 400;
+    justify-content: center; 
+    align-items: center; 
+}
+.Qui_suis_je {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    background-color: var(--second-color);
+    font-family: Arial, sans-serif;
 }
 
-.btn1:hover {
-  box-shadow: none;
+.title {
+    text-align: center;
+    margin-bottom: 2rem;
+    color:var(--main-color);
+    font-size: 10rem;
 }
-.about {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
-  background-color: var(--second-color);
-  font-family: Arial,sans-serif;
-  font-size: 23px;
+
+.title-text {
+    font-size: 4rem;
+}
+
+.about-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+    flex-direction: row-reverse; 
+}
+
+.about-text {
+    font-size: 16px;
+    max-width: 600px;
+}
+
+.about-img {
+    width: 40vw;
+    height: 40vw;
+    max-width: 100%;
+    max-height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .about-img img {
-  width: 17.5vw;
-
+    width: 100%;
+    height: auto;
+    object-fit: cover;
 }
 
-.heading {
-  text-align: center;
-  font-size: 4.5rem;
-}
-
-
-.about-content{
-  margin-left: 2%;
-  margin-right: 2%;
-}
-
-.about-content h2 {
-  text-align: left;
-  font-size: 32px;
-  font-weight: 700;
-  font-family: arial,sans-serif;
-}
-
-.about-content h3 {
-  font-size: 45px;
-  font-weight: 500;
-  text-align: center;
-  font-family: arial, sans-serif;
-}
-
-.about-content p {
-  font-size: 23px;
-  margin: 2rem 0 3rem;
-  text-align: center;
-  font-family: Arial, sans-serif;
-}
-
-/* Style pour encadrer la section */
 .Mon_parcours {
-  border: 2px solid var(--main-color);
-  padding: 1rem; 
-  margin: -10px 0 0 0; /* Réduire la marge inférieure */
-  font-family: arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, sans-serif;
 }
 
-.Mon_parcours-contenue{
-  margin-left: 2%;
-  margin-right: 2%;
+.Mon_parcours p {
+    font-size: 16px;
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    align-content: center;
+}
+.timeline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+.timeline-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 300px;
+    text-align: center;
 }
 
-/* Style pour les titres */
-h3 {
-  color:var(--main-color);
-  /* Couleur du texte du titre */
-  font-size: 27px;
+.timeline-content h3 {
+    font-size: 2rem;
+    color: var(--main-color);
+    margin-bottom: 1rem;
 }
 
-/* Style pour le texte à l'intérieur des boîtes */
-p {
-  margin: 5px 0;
-  /* Marge pour le texte à l'intérieur des boîtes */
-  font-size: 23px;
+.SIN {
+    color: #fff; 
+    text-decoration: underline; 
+    display: inline; 
 }
 
-.about-layer a i {
-  font-size: 23px;
-  color: var(--second-bg-color);
-  font-family: arial , sans-serif;
+.SIN:hover {
+    color: #ffcc00; 
+    text-decoration: underline; 
 }
+
+.clickable-image {
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.clickable-image:hover {
+    transform: scale(1.1);
+}
+
+
 
 .portfolio {
-  background-color: var(--second-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background-color: var(--second-color);
 }
 
-.portfolio h2 {
-  margin-bottom: 4rem;
+.portfolio-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    gap: 2rem; 
 }
 
-.portfolio-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  align-items: center;
-  gap: 2.5rem;
-}
-
-.portfolio-container .portfolio-box {  /*pour le portfolio sa commence la les boxe  */
-  position: relative;
-  overflow: hidden;
-  box-shadow: 0 0 1rem var(--bg-color);
-  display: flex;
-  font-size: 23px;
-  font-family: Arial , sans-serif;
-
-}
-
-.texte_portfolio p {
-  margin-left: 1%;
-  margin-right: 1%;
-}
-
-.portfolio-box img {
-  width: 100%;
-  transition: .5s ease;
+.portfolio-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centre l'image et le texte dans chaque élément */
+    justify-content: center;
+    text-align: center;
+    width: 60vw; /* Ou une autre valeur selon tes préférences */
+    margin: 0 auto; /* Centre les éléments horizontalement dans leur conteneur */
+  }
   
+.portfolio-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+.portfolio-item:hover img {
+    transform: scale(1.1);
+  }
+.portfolio-item h3,
+.portfolio-item p {
+    margin-top: 1rem; 
+    margin-bottom: 0; 
 }
 
-.portfolio-box:hover img {
-  transform: scale(1..1);
+.portfolio-item h2 {
+    color: var(--main-color);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    margin-top: 2.1rem;
 }
 
-
-.portfolio-box .portfolio-layer {   
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(rgba(0, 0, 0, .1), var(--main-color));
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
-  padding: 0 4rem;
-  transform: translateY(100%);
-  transition: .5s ease;
-  font-size: 35px;
+.portfolio-item p {
+    color: #fff;
+    font-size: 1.5rem;
+    font-family: Arial, sans-serif;
 }
 
-.portfolio-box:hover .portfolio-layer {
-  transform: translate(0);
+.portfolio-item span {
+    color: #ffcc00;
+    font-size: 1.5rem;
+    font-family: Arial, sans-serif;
 }
 
-.portfolio-box .portfolio-layer h4 {
-  font-size: 45px;
-  color: #e70a0a;
-}
-
-.portfolio-box .portfolio-layer h3 {
-  font-size: 45px;
-
-}
-
-h5{
-  color: #fff ;
-
-}
-
-h6{
-  color: red;
-  font-size: 45px;
-}
-
-h7{
-  color: purple;
-  font-size: 45px ;
-}
-.portfolio-container .portfolio-box2 {
-  position: relative;
-  overflow: hidden;
-  box-shadow: 0 0 1rem var(--bg-color);
-  display: flex;
-
-}
-
-.portfolio-container .portfolio-box2 {
-  position: relative;
-  overflow: hidden;
-  box-shadow: 0 0 1rem var(--bg-color);
-  display: flex;
-}
-
-.portfolio-box2 video {
-  width: 100%;
-  transition: .5s ease;
-}
-
-.portfolio-box2:hover {
-  background-color: var(--main-color-);  /* Couleur bleue quasi transparente sur le survol */
-}
-
-.portfolio-box2 .portfolio-layer {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
-  padding: 0 4rem;
-  transform: translateY(100%);
-  transition: .5s ease;
-  z-index: 1; /* Placer le texte au premier plan */
-}
-
-.portfolio-box2:hover .portfolio-layer {
-  transform: translate(0);
-}   
-/* a la j ai chercher pour ca y a des commentaire */
-
-.portfolio-layer p {
-  font-size: 28px;
-  margin: .3rem 0 1rem;
-  font-family: arial, sans-serif;
-  color: #000000;
-}
-
-.portfolio-layer a {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  width: 5rem;
-  height: 5rem;
-  background: var(--text-color);
-  border-radius: 50%;
-}
-
-.portfolio-layer a i {
-  font-size: 2rem;
-  color: var(--second-bg-color);
+.contact {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    padding: 4rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 100vh; 
+    text-align: center; /
 }
 
 .contact h2 {
-  margin-bottom: 3rem;
+    margin-bottom: 3rem;
+    font-size: 4.5rem;
 }
 
-.contact form {
-  max-width: 70rem;
-  margin: 1rem auto;
-  text-align: center;
-  margin-bottom: 3rem;
+.contact .contact-content {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    gap: 5rem;
+    flex-wrap: wrap;
+    width: 100%;
+    text-align: center; 
+  }
+  
+  .contact-info {
+    text-align: center; 
+    margin: 0 auto;
+    padding: 1rem;
+    flex: 1; 
+    font-size: 2rem;
 }
-
-.contact form .input-box {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-.contact form .input-box input,
-.contact form textarea {
-  width: 100%;
-  padding: 1.5rem;
-  font-size: 1.6rem;
-  color: var(--text-color);
-  background: var(--second-color);
- 
-  margin: .7rem 0;
-
-}
-
-.contact form .input-box input {
-  width: 49%;
-}
-
-.contact form textarea {
-  resize: none;
-}
-
-.contact form .btn {
-  margin-top: 2rem;
-  cursor: pointer;
-}
-
-.footer-text p {
-  font-size: 1.6rem;
-}
-
-.footer-iconTop a {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  padding: .8rem;
-}
-
-.Contact {
-  text-align: center; /* Centre le contenu de la section horizontalement */
-}
-
-
-.Contact {
-  text-align: center; /* Centre le contenu de la section horizontalement */
-}
-
-.social-icons {
-  display: flex; /* Utilisation du flexbox pour aligner les éléments sur une ligne */
-  justify-content: center; /* Centre les éléments horizontalement */
-}
-
-.social-icons .icon {
-  margin: 0 20px; /* Marge entre chaque icône */
-}
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1.5rem;
+  }
+  
 
 .social-icons .icon a {
-  display: block; /* Affiche les liens en tant que bloc pour mieux aligner les icônes */
-  text-align: center; /* Centre le contenu du lien */
-  font-size: 72px; /* Taille de la police des icônes (double de la taille initiale) */
-  color: #ffffff; /* Couleur de base des icônes (blanc ici) */
-  transition: color 0.3s ease; /* Transition douce de la couleur pendant 0.3s */
+    font-size: 5rem;
+    color: var(--text-color);
+    transition: color 0.3s;
 }
 
-/* Effet hover pour changer la couleur au survol */
 .social-icons .icon a:hover {
-  color: var(--main-color); /* Changement de couleur au survol vers la couleur principale */
+    color: var(--primary-color);
 }
 
 
-
-
-@media(max-width: 1200px) {
-  html {
-    font-size: 55%;
-  }
-}
-
-@media(max-width: 991px) {
-  .header {
-    padding: 2rem 3%;
+.footer-text p {
+    font-size: 1.6rem;
+    color :#fff;
+    text-align: center; 
   }
 
-  section {
-    padding: 10rem 3% 2rem;
+  .carousel-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
-
-  .Mon_parcours {
-    padding-bottom: 7rem;
+  
+  .carousel-item img {
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
   }
-
-  .footer {
-    padding: 2rem 3%;
+  
+  .carousel-caption {
+    width: 50%;
+    text-align: left;
+    padding: 20px;
+    background-color: var(--second-color);
+    color: white;
+    position: static;
   }
-}
-
-@media(max-width: 768px) {
-  #menu-icon {
-    display: block;
-  }
-
-  .navbar {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    padding: 1rem 3%;
-    background: var(--bg-color);
-    border-top: .1rem solid rgba(0, 0, 0, .2);
-    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
-    display: none;
-  }
-
-  .navbar.active {
-    display: block;
-  }
-
-  navbar a {
-    display: block;
-    font-size: 2rem;
-    margin: 3rem 0;
-
-  }
-
-  .home {
-    flex-direction: column;
-
-  }
-
-  .home-content h3 {
-    font-size: 2.6rem;
-  }
-
-  .home-content h1 {
-    font-size: 5.6rem;
-  }
-
-  .home-img img {
-    width: 70rw;
-    margin-top: 4rem;
-  }
-
-  .about {
-    flex-direction: column-reverse;
-  }
-
-  .about-img img {
-    width: 70%;
-    margin-top: 4rem;
-  }
-
-  .portfolio h2 {
-    margin-bottom: 3rem;
-  }
-
-  .portfolio-container {
-    grid-template-columns: repeat(2, 1fr);
-
-  }
-}
-
-@media(max-width: 617px) {
-  .portfolio-container {
-    grid-template-columns: 1fr;
-    }
-}
+  

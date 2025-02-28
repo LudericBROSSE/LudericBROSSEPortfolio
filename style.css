@@ -389,6 +389,8 @@ h4 {
     color :#fff;
     text-align: center; 
   }
+.warning {
+  color : #FF0000
 
   .carousel-item {
     display: flex;

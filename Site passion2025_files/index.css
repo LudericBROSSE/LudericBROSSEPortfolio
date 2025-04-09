@@ -1,0 +1,76 @@
+.image {
+    position: relative;
+    display: flex; /*Elements enfants deveinnent des éléments flexibles disposés en ligne*/
+    justify-content: space-around; /*L'espace vide avant le premier et après le dernier élément est égal à la moitié de l'espace entre chaque paire d'éléments adjacents*/
+    align-items: center; /* Centre verticalement l'élément enfant */
+    flex-wrap: wrap; /*Les éléments flexibles sont disposés sur plusieurs lignes*/
+    margin-top: 20px; /*Mettre la marge en haut à 20px*/
+}
+
+.image img {
+    display: block;
+    width:600px; 
+    height:400px;
+    height: auto;
+}
+
+.circle-link {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    display: flex; /*Elements enfants deveinnent des éléments flexibles disposés en ligne*/
+    align-items: center; /*Centre les éléments flexibles*/
+    justify-content: center; /* Centrage horizontal */
+    text-decoration: none; /*Pas de décoration du texte*/
+    color: #000;
+    font-size: 24px;
+    z-index: 1;
+}
+
+  
+body {
+    background-color: grey;
+}
+
+h1{
+    color: orange;
+    text-align: center; /*Pour centrer le texte*/
+    font-size: 45px;
+}
+
+h3{
+    color: cyan;
+    text-align: center; /*Pour centrer le texte*/
+    font-size: 30px;
+}
+
+
+.para p{
+    text-align: center; /*Pour centrer le texte*/
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 10px; /*Espace entre le contenu et la bordure mis à 10px */
+    border-radius: 5px; 
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif; /*Utilisation de la police Times New Roman*/
+    font-weight: bold; /*Pour mettre le texte en gras*/
+    padding: 10px; /*Espace entre le contenu et la bordure mis à 10px */
+    margin-left: 120px; /*Mettre la marge du côté gauche à 120px*/
+    margin-right: 120px; /*Mettre la marge du côté droit à 120px*/
+    
+}
+p{
+    text-align: center; /*Pour centrer le texte*/
+    padding: 10px; /*Espace entre le contenu et la bordure mis à 10px */
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif; /*Utilisation de la police Times New Roman*/
+    font-weight: bold; /*Pour mettre le texte en gras*/
+    padding: 10px; /*Espace entre le contenu et la bordure mis à 10px */
+    margin-left: 120px; /*Mettre la marge du côté gauche à 120px*/
+    margin-right: 120px; /*Mettre la marge du côté droit à 120px*/
+    
+}

@@ -103,7 +103,7 @@ h4 {
     color: var(--main-color);
   }
 .home-img-cerlce {
-    width: 45vw;
+    width: 50vw;
     height: 35vw;
     border-radius: 50%;
     overflow: hidden;
@@ -116,6 +116,7 @@ h4 {
     width: 100%;
     min-height: 100%;
     object-fit: cover;
+    margin-left:-1rem;
 }
 
 .social-media a {

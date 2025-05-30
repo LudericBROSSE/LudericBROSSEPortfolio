@@ -207,8 +207,7 @@ h4 {
     max-height: 100%;
     overflow: hidden;
     display: flex;
-    justify-content: center;
-    align-items: center;
+
 }
 
 .about-img img {

@@ -197,7 +197,7 @@ h4 {
 }
 
 .about-text {
-    font-size: 16px;
+    font-size: 2.5rem;;
     max-width: 600px;
 }
 
@@ -227,7 +227,7 @@ h4 {
 }
 
 .Mon_parcours p {
-    font-size: 16px;
+    font-size: 2.5rem;
     margin-bottom: 2rem;
     margin-left: 2rem;
     margin-right: 2rem;
@@ -330,7 +330,7 @@ h4 {
 
 .portfolio-item p {
     color: #fff;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     font-family: Arial, sans-serif;
 }
 
@@ -394,7 +394,7 @@ h4 {
 
 
 .footer-text p {
-    font-size: 1.6rem;
+    font-size: 2.5rem;
     color :#fff;
     text-align: center; 
   }

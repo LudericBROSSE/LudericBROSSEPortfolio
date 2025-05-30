@@ -207,6 +207,7 @@ h4 {
     max-height: 100%;
     overflow: hidden;
     display: flex;
+    margin-left: -10rem;
 
 }
 

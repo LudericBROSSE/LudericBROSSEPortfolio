@@ -480,7 +480,7 @@ h4 {
     align-items: center; /* Centre verticalement les éléments */
     justify-content: space-between; /* Espace entre l'image et le texte */
     height: 80vh; /* Hauteur de la section */
-    background-color: var( --main-color);
+    background-color: var( --text-color);
     padding: 0 2rem; /* Ajoute un peu de padding sur les côtés */
     margin-bottom: -20rem; /* Ajoute un espace en bas */
 }

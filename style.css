@@ -447,10 +447,11 @@ h4 {
 }
 
   .contenue h3 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: var(--main-color);
-    margin-top: 15rem; /* Utilise une marge négative pour remonter le texte */
+    margin-top: 10rem; /* Utilise une marge négative pour remonter le texte */
     margin-left: 6rem; 
+    margin-botom: 10rem;
 }
 
 .button-container {

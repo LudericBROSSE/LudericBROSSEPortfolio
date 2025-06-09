@@ -29,7 +29,6 @@ body {
 }
 
 
-
 h4 {
   font-size: 1.5em;
   font-family: arial, sans-serif;
@@ -502,4 +501,114 @@ h4 {
   text-align: left; /* Aligne le texte à gauche */
   width: 45%; /* Prend 45% de la largeur de l'élément parent */
   margin-right: -10rem; /* Ajuste la position du texte */
+}
+@media (max-width: 1200px) {
+  html {
+    font-size: 56.25%;
+  }
+  .about-img img {
+    margin-left: -10rem;
+  }
+  .contenue2-txt {
+    margin-top: 15rem;
+  }
+}
+
+@media (max-width: 992px) {
+  html {
+    font-size: 50%;
+  }
+  .home {
+    flex-direction: column;
+    text-align: center;
+    padding-top: 8rem;
+  }
+  .home-img-cerlce {
+    width: 70vw;
+    height: 50vw;
+    margin-top: 3rem;
+  }
+  .about-content {
+    flex-direction: column;
+    gap: 5rem;
+  }
+  .portfolio-item {
+    width: 80vw;
+  }
+  .contenue1,
+  .contenue2 {
+    flex-direction: column;
+    height: auto;
+    gap: 2rem;
+  }
+  .contenue1 img,
+  .contenue2 img {
+    margin: 0;
+  }
+  .contenue1-txt,
+  .contenue2-txt {
+    margin: 0;
+    width: 90%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  #menu-icon {
+    display: block;
+  }
+  .navbar {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: var(--bg-color);
+    flex-direction: column;
+  }
+  .navbar a {
+    margin: 2rem 0;
+    display: block;
+    text-align: center;
+  }
+  .portfolio-item img {
+    height: auto;
+  }
+  .carousel-item {
+    flex-direction: column;
+  }
+  .carousel-caption,
+  .carousel-item img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  html {
+    font-size: 45%;
+  }
+  .title {
+    font-size: 6rem;
+  }
+  .title-text,
+  .home h2,
+  .home p,
+  .about-text,
+  .portfolio-item p,
+  .portfolio-item span,
+  .Mon_parcours p {
+    font-size: 2rem;
+  }
+  .portfolio-item h2 {
+    font-size: 2.5rem;
+  }
+  .contact h2 {
+    font-size: 3.5rem;
+  }
+  .social-icons .icon a {
+    font-size: 3.5rem;
+  }
+  .footer-text p {
+    font-size: 2rem;
+  }
 }

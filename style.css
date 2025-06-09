@@ -1,139 +1,505 @@
-/* --- RESPONSIVE DESIGN --- */
-@media (max-width: 1024px) {
-  html {
-    font-size: 55%;
-  }
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display');
 
-  .home {
-    flex-direction: column;
-    text-align: center;
-    padding: 2rem;
-    height: auto;
-  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+  font-family: Arial, sans-serif;
+}
 
-  .home h1 {
-    font-size: 3rem;
-  }
+:root {
+  --bg-color: #1f242d;
+  --second-color: #323946;
+  --text-color: #fff;
+  --main-color: #0ef;
+}
 
-  .home h2 {
-    font-size: 3.5rem;
-  }
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
 
-  .home p {
-    font-size: 2rem;
-  }
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
 
-  .home-img-cerlce {
-    width: 80vw;
-    height: 80vw;
-    margin-top: 2rem;
-  }
 
-  .about-content {
-    flex-direction: column;
-    padding: 2rem;
-  }
 
-  .about-img {
-    width: 80vw;
-    height: auto;
+h4 {
+  font-size: 1.5em;
+  font-family: arial, sans-serif;
+}
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 2rem 9%;
+  background: var(--bg-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  
+}
+
+.header.sticky {
+  border-bottom: .1rem solid rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+  font-size: 2.5rem;
+  color: var(--main-colort);
+  font-weight: 600;
+  cursor: default;
+}
+
+
+
+.navbar a {
+  font-size: 17px;
+  color: var(--text-color);
+  margin-left: 4rem;
+  transition: .3s;
+  font-family: arial,sans-serif;
+}
+
+
+.navbar a:hover,
+.navbar a.active {
+  color: var(--main-color);
+}
+
+
+#menu-icon {
+  font-size: 3.6rem;
+  color: var(--text-color);
+  display: none;
+}
+
+.home {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  padding: 0 9%;
+}
+
+.home h1 {
+  font-size: 4rem;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.home h1 span {
+    font-size: 6rem;
+    font-weight: 800;
+    line-height: 1.2;
+    color: var(--main-color);
+  }
+.home-img-cerlce {
+    width: 50vw;
+    height: 35vw;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
     justify-content: center;
+    align-items: center;
   }
 
-  .about-img img {
-    margin-left: 0;
-  }
+.home-img-cerlce img {
+    width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    margin-left:-1rem;
+}
 
-  .about-text {
+.social-media a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background: transparent;
+    border: .2rem solid var(--main-color);
+    border-radius: 50%;
     font-size: 2rem;
-    text-align: center;
-  }
+    color: var(--main-color);
+    margin: 3rem 1.5rem 3rem 0;
+    transition: .5s ease;
+}
+  
+.social-media a:hover {
+    background: var(--main-color);
+    color: var(--second-color);
+    box-shadow: 0 0 1rem var(--main-color);
+}
 
-  .portfolio-content {
-    flex-direction: column;
-    gap: 4rem;
-  }
+.btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background: var(--main-color);
+    color: var(--second-color);
+    font-size: 1.6rem;
+    font-weight: 600;
+    border-radius: 2rem;
+    margin-top: 2rem;
+    transition: .5s;
+}
 
-  .portfolio-item {
-    width: 90vw;
-  }
-
-  .portfolio-item img {
-    height: 250px;
-  }
-
-  .portfolio-item p,
-  .portfolio-item span {
-    font-size: 2rem;
-  }
-
-  .contact {
-    flex-direction: column;
-    height: auto;
-    padding: 4rem 2rem;
-  }
-
-  .contact .contact-content {
-    flex-direction: column;
-  }
-
-  .contenue1,
-  .contenue2 {
-    flex-direction: column;
-    height: auto;
-    margin: 2rem 0;
-    text-align: center;
-  }
-
-  .contenue1 img,
-  .contenue2 img {
-    margin: 2rem 0;
-    width: 90%;
-    height: auto;
-  }
-
-  .contenue1-txt,
-  .contenue2-txt {
-    font-size: 2rem;
-    width: 90%;
-    margin: 2rem auto;
-    text-align: center;
-  }
-
-  .title {
-    font-size: 5rem;
-  }
-
-  .title-text {
+.btn:hover {
+    background: var(--second-color);
+    color: var(--main-color);
+}
+.home p{
     font-size: 2.5rem;
-    text-align: center;
-  }
+}
+.home h2{
+  font-size: 5rem;
+}
 
-  .timeline {
-    flex-direction: column;
-  }
-
-  .timeline-content {
-    max-width: 90%;
-  }
-
-  .footer-text p {
-    font-size: 2rem;
-  }
-
-  #menu-icon {
-    display: block;
-  }
-
-  .navbar {
-    display: none;
-    flex-direction: column;
+.title-text {
+    font-weight: 400;
+    justify-content: center; 
+    align-items: center; 
+}
+.Qui_suis_je {
+    display: flex;
+    flex-direction: column; 
     align-items: center;
     background-color: var(--second-color);
+    font-family: Arial, sans-serif;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 2rem;
+    color:var(--main-color);
+    font-size: 10rem;
+}
+
+.title-text {
+    font-size: 4rem;
+}
+
+.about-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
     width: 100%;
+    flex-direction: row-reverse; 
+}
+
+.about-text {
+    font-size: 2.5rem;;
+    max-width: 600px;
+}
+
+.about-img {
+    width: 40vw;
+    height: 40vw;
+    max-width: 100%;
+    max-height: 100%;
+    overflow: hidden;
+    display: flex;
+   
+
+}
+
+.about-img img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; 
+    margin-left: -15rem;
+}
+
+.Mon_parcours {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+.Mon_parcours p {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    align-content: center;
+}
+.timeline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+.timeline-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 300px;
+    text-align: center;
+}
+
+.timeline-content h3 {
+    font-size: 2rem;
+    color: var(--main-color);
+    margin-bottom: 1rem;
+}
+
+.SIN {
+    color: #fff; 
+    text-decoration: underline; 
+    display: inline; 
+}
+
+.SIN:hover {
+    color: #ffcc00; 
+    text-decoration: underline; 
+}
+
+.clickable-image {
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.clickable-image:hover {
+    transform: scale(1.1);
+}
+
+
+
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background-color: var(--second-color);
+}
+
+.portfolio-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    gap: 2rem; 
+}
+
+.portfolio-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centre l'image et le texte dans chaque élément */
+    justify-content: center;
+    text-align: center;
+    width: 40vw; /* Ou une autre valeur selon tes préférences */
+    margin: 0 auto; /* Centre les éléments horizontalement dans leur conteneur */
+  }
+  
+  .portfolio-item img {
+    width: 100%; /* Prend toute la largeur de l'élément parent */
+    height: 500px; /* Définit une hauteur fixe pour toutes les images */
+    object-fit: cover; /* Assure que l'image couvre l'élément sans déformer le ratio */
+    transition: transform 0.3s ease; /* Transition pour l'effet de survol */
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.portfolio-item:hover img {
+    transform: scale(1.2); /* Agrandit l'image au survol (ajustez le facteur ici) */
+}
+
+  
+.portfolio-item h3,
+.portfolio-item p {
+    margin-top: 2.5rem; 
+    margin-bottom: 0; 
+}
+
+.portfolio-item h2 {
+    color: var(--main-color);
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    margin-top: 2.1rem;
+}
+
+.portfolio-item p {
+    color: #fff;
+    font-size: 2.5rem;
+    font-family: Arial, sans-serif;
+}
+
+.portfolio-item span {
+    color: #ffcc00;
+    font-size: 2.5rem;
+    font-family: Arial, sans-serif;
+}
+
+.contact {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    padding: 4rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 100vh; 
+    text-align: center; /
+}
+
+.contact h2 {
+    margin-bottom: 3rem;
+    font-size: 4.5rem;
+}
+
+.contact .contact-content {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    gap: 5rem;
+    flex-wrap: wrap;
+    width: 100%;
+    text-align: center; 
+  }
+  
+  .contact-info {
+    text-align: center; 
+    margin: 0 auto;
+    padding: 1rem;
+    flex: 1; 
+    font-size: 2rem;
+}
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1.5rem;
+  }
+  
+
+.social-icons .icon a {
+    font-size: 5rem;
+    color: var(--text-color);
+    transition: color 0.3s;
+}
+
+.social-icons .icon a:hover {
+    color: var(--primary-color);
+}
+
+
+.footer-text p {
+    font-size: 2.5rem;
+    color :#fff;
+    text-align: center; 
   }
 
-  .navbar a {
-    margin: 2rem 0;
+  .carousel-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
+  
+  .carousel-item img {
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .carousel-caption {
+    width: 50%;
+    text-align: left;
+    padding: 20px;
+    background-color: var(--second-color);
+    color: white;
+    position: static;
+  }
+  
+  .contenue1 {
+    display: flex;
+    flex-direction: row; /* Change la direction en ligne */
+    align-items: center; /* Centre verticalement les éléments */
+    justify-content: space-between; /* Espace entre l'image et le texte */
+    height: 80vh; /* Hauteur de la section */
+    background-color: var(--bg-color);
+    padding: 0 2rem; /* Ajoute un peu de padding sur les côtés */
+    margin-bottom: -30rem; /* Ajoute un espace en bas */
+}
+
+.contenue1 img {
+    width: 100%; /* Prend 50% de la largeur de l'élément parent */
+    height: 350px; /* Définit une hauteur fixe pour toutes les images */
+    object-fit: cover; /* Assure que l'image couvre l'élément sans déformer le ratio */
+    transition: transform 0.3s ease; /* Transition pour l'effet de survol */
+    margin-top: -40rem; /* Ajuste la position de l'image */
+    margin-left: 6rem;
+}
+
+.contenue1-txt {
+    font-size: 2.5rem;
+    margin-top: 0; /* Supprime la marge en haut */
+    margin-bottom: 40rem; /* Supprime la marge en bas */
+    text-align: left; /* Aligne le texte à gauche */
+    width: 45%; /* Prend 45% de la largeur de l'élément parent */
+}
+
+  .contenue h3 {
+    font-size: 45px;
+    color: var(--main-color);
+    margin-top: 15rem; /* Utilise une marge négative pour remonter le texte */
+    margin-left: 6rem; 
+}
+
+.button-container {
+  text-align: center; /* Centre le contenu horizontalement */
+  margin-top: 2rem; /* Ajoute un peu d'espace au-dessus si nécessaire */
+}
+
+.contenue-btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background: var(--main-color);
+  color: var(--second-color);
+  font-size: 1.6rem;
+  font-weight: 600;
+  border-radius: 2rem;
+  transition: .5s;
+  text-decoration: none; /* Enlève le soulignement */
+}
+.contenue-btn:hover {
+  background: var(--second-color);
+  color: var(--main-color);
+}
+.contenue2 {
+  display: flex;
+  flex-direction: row; /* Change la direction en ligne */
+  align-items: center; /* Centre verticalement les éléments */
+  justify-content: space-between; /* Espace entre l'image et le texte */
+  height: 60vh; /* Hauteur de la section */
+  background-color: var(--second-color);
+  padding: 0 2rem; /* Ajoute un peu de padding sur les côtés */
+  margin-bottom: -10rem; /* Ajoute un espace en bas */
+}
+
+.contenue2 img {
+  width: 100%; /* Prend 50% de la largeur de l'élément parent */
+  height: 350px; /* Définit une hauteur fixe pour toutes les images */
+  object-fit: cover; /* Assure que l'image couvre l'élément sans déformer le ratio */
+  transition: transform 0.3s ease; /* Transition pour l'effet de survol */
+  margin-top: -10rem; /* Ajuste la position de l'image */
+  margin-right: 15rem;
+}
+
+.contenue2-txt {
+  font-size: 2.5rem;
+  margin-top:30rem; /* Supprime la marge en haut */
+  margin-bottom: 40rem; /* Supprime la marge en bas */
+  text-align: left; /* Aligne le texte à gauche */
+  width: 45%; /* Prend 45% de la largeur de l'élément parent */
+  margin-right: -10rem; /* Ajuste la position du texte */
 }

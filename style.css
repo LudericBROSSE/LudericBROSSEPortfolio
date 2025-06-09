@@ -434,7 +434,7 @@ h4 {
     height: 350px; /* Définit une hauteur fixe pour toutes les images */
     object-fit: cover; /* Assure que l'image couvre l'élément sans déformer le ratio */
     transition: transform 0.3s ease; /* Transition pour l'effet de survol */
-    margin-top: -30rem; /* Ajuste la position de l'image */
+    margin-top: -10rem; /* Ajuste la position de l'image */
     margin-left: 6rem;
 }
 
@@ -490,7 +490,7 @@ h4 {
     height: 350px; /* Définit une hauteur fixe pour toutes les images */
     object-fit: cover; /* Assure que l'image couvre l'élément sans déformer le ratio */
     transition: transform 0.3s ease; /* Transition pour l'effet de survol */
-    margin-top: -30rem; /* Ajuste la position de l'image */
+    margin-top: -10rem; /* Ajuste la position de l'image */
     margin-left: 6rem;
 }
 

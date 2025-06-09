@@ -439,7 +439,7 @@ h4 {
 }
 
 .contenue1-txt {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     margin-top: 0; /* Supprime la marge en haut */
     margin-bottom: 40rem; /* Supprime la marge en bas */
     text-align: left; /* Aligne le texte à gauche */
@@ -447,7 +447,7 @@ h4 {
 }
 
   .contenue h3 {
-    font-size: 45px;
+    font-size: 2.5rem;
     color: var(--main-color);
     margin-top: 15rem; /* Utilise une marge négative pour remonter le texte */
     margin-left: 6rem; 

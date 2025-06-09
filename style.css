@@ -490,7 +490,7 @@ h4 {
     object-fit: cover; /* Assure que l'image couvre l'élément sans déformer le ratio */
     transition: transform 0.3s ease; /* Transition pour l'effet de survol */
     margin-top: 10rem; /* Ajuste la position de l'image */
-    margin-left: 25rem;
+
 }
 
 .contenue2-txt {

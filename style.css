@@ -426,7 +426,7 @@ h4 {
     height: 80vh; /* Hauteur de la section */
     background-color: var(--bg-color);
     padding: 0 2rem; /* Ajoute un peu de padding sur les côtés */
-    margin-bottom: -20rem; /* Ajoute un espace en bas */
+    margin-bottom: 20rem; /* Ajoute un espace en bas */
 }
 
 .contenue1 img {
@@ -482,7 +482,7 @@ h4 {
     height: 80vh; /* Hauteur de la section */
     background-color: var( --second-color);
     padding: 0 2rem; /* Ajoute un peu de padding sur les côtés */
-    margin-bottom: -20rem; /* Ajoute un espace en bas */
+    margin-bottom: 20rem; /* Ajoute un espace en bas */
 }
 
 .contenue2 img {

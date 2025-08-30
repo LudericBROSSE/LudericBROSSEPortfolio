@@ -1,0 +1,660 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display');
+/* Base styles (already present, ensure they are mobile-first or well-structured) */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+  font-family: Arial, sans-serif;
+}
+
+:root {
+  --bg-color: #1f242d;
+  --second-color: #323946;
+  --text-color: #fff;
+  --main-color: #0ef;
+}
+
+html {
+  font-size: 62.5%; /* 1rem = 10px, makes scaling easier */
+  overflow-x: hidden;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+h4 {
+  font-size: 1.5rem; /* Use rem for scaling */
+  font-family: arial, sans-serif;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem 5%;
+  background: var(--bg-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.header.sticky {
+  border-bottom: .1rem solid rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: 600;
+  cursor: default;
+  margin-left: -100rem;
+}
+
+.navbar a {
+  font-size: 1.5rem;
+  color: var(--text-color);
+  transition: .3s;
+  font-family: arial, sans-serif;
+  padding: 0.5rem 1rem;
+
+}
+
+.navbar a:hover,
+.navbar a.active {
+  color: var(--main-color);
+}
+
+#menu-icon {
+  font-size: 3.6rem;
+  color: var(--text-color);
+  display: none; /* Hidden by default, shown on smaller screens */
+}
+
+.home {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100vh; /* Use min-height for content flexibility */
+  padding: 0 9%;
+}
+
+.home h1 {
+  font-size: 4rem;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.home h1 span {
+  font-size: 5rem;
+  font-weight: 800;
+  line-height: 1.2;
+  color: var(--main-color);
+}
+
+.home-img-cerlce {
+  width: 30vw;
+  height: 30vw;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.home-img-cerlce img {
+  width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  margin-left: -1rem;
+}
+
+.social-media a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  height: 4rem;
+  background: transparent;
+  border: .2rem solid var(--main-color);
+  border-radius: 50%;
+  font-size: 2rem;
+  color: var(--main-color);
+  margin: 3rem 1.5rem 3rem 0;
+  transition: 0.5s ease;
+}
+
+.social-media a:hover {
+  background: var(--main-color);
+  color: var(--second-color);
+  box-shadow: 0 0 1rem var(--main-color);
+}
+
+.btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background: var(--main-color);
+  color: var(--second-color);
+  font-size: 1.6rem;
+  font-weight: 600;
+  border-radius: 2rem;
+  margin-top: 2rem;
+  transition: .5s;
+}
+
+.btn:hover {
+  background: var(--second-color);
+  color: var(--main-color);
+}
+
+.home p {
+  font-size: 2rem;
+}
+
+.home h2 {
+  font-size: 2.5rem;
+}
+
+.title-text {
+  font-weight: 400;
+  justify-content: center;
+  align-items: center;
+}
+
+.Qui_suis_je {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--second-color);
+  font-family: Arial, sans-serif;
+  padding: 5rem 0; /* Add padding for spacing */
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--main-color);
+  font-size: 10rem;
+}
+
+.title-text {
+  font-size: 4rem;
+}
+
+.about-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+  flex-direction: row-reverse;
+  padding: 0 5%; /* Add horizontal padding */
+}
+
+.about-text {
+  font-size: 2.5rem;
+  max-width: 600px;
+  text-align: justify; /* Justify text for better readability */
+}
+
+.about-img {
+  width: 45vw; 
+  height: 45vw; 
+  max-width: 100%; 
+  max-height: 100%; 
+  overflow: hidden; 
+  display: flex; 
+  margin-left: -2rem; 
+  padding: 2rem;
+
+}
+
+.about-img img {
+  width: 100%; 
+  height: auto; 
+  object-fit: cover; 
+  border: 0.2rem solid #0ef; 
+  border-radius: 10%; 
+}
+
+
+.Mon_parcours {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  padding: 5rem 0; /* Add padding for spacing */
+}
+
+.Mon_parcours p {
+  font-size: 2.5rem;
+  max-width: 100rem;
+  text-align: justify; /* Justify text for better readability */
+}
+
+.timeline {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Align items to the top */
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding: 0 5%; /* Add horizontal padding */
+  
+}
+
+.timeline-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 300px;
+  text-align: center;
+  background-color: var(--second-color); /* Add background for better visual separation */
+  padding: 2rem;
+  border-radius: 1rem;
+    border: 0.2rem solid #0ef; 
+  border-radius: 10%; 
+}
+
+.timeline-content h3 {
+  font-size: 3rem;
+  color: var(--main-color);
+  margin-bottom: 1rem;
+}
+
+.timeline-content p {
+  font-size: 2.5rem; /* Adjust font size */
+  margin: 0; /* Remove default paragraph margin */
+  text-align: center;
+}
+
+.SIN {
+  color: #fff;
+  text-decoration: underline;
+  display: inline;
+}
+
+.SIN:hover {
+  color: #ffcc00;
+  text-decoration: underline;
+}
+
+.clickable-image {
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.clickable-image:hover {
+  transform: scale(1.1);
+}
+
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  background-color: var(--second-color);
+  padding: 5rem 0; /* Add padding for spacing */
+}
+
+.portfolio-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 0 5%; /* Add horizontal padding */
+}
+
+.portfolio-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 40vw;
+  margin: 0 auto;
+  padding: 2rem; /* Add padding to portfolio items */
+  background-color: var(--bg-color); /* Add background for better visual separation */
+  border-radius: 1rem;
+}
+
+.portfolio-item img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  border: 0.2rem solid #0ef; 
+  border-radius: 10%; 
+}
+
+.portfolio-item:hover img {
+  transform: scale(1.05); /* Slightly smaller scale for better fit */
+}
+
+.portfolio-item h3,
+.portfolio-item p {
+  margin-top: 2.5rem;
+  margin-bottom: 0;
+}
+
+.portfolio-item h2 {
+  color: var(--main-color);
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  margin-top: 2.1rem;
+}
+
+.portfolio-item p {
+  color: #fff;
+  font-size: 2.5rem;
+  font-family: Arial, sans-serif;
+}
+
+.portfolio-item span {
+  color: #ffcc00;
+  font-size: 2.5rem;
+  font-family: Arial, sans-serif;
+}
+
+.contact {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  padding: 4rem 0;
+  display: flex;
+  flex-direction: column; /* Arrange content vertically */
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Use min-height */
+  text-align: center;
+}
+
+.contact h2 {
+  margin-bottom: 3rem;
+  font-size: 4.5rem;
+}
+
+.contact .contact-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  flex-wrap: wrap;
+  width: 100%;
+  text-align: center;
+}
+
+.contact-info {
+  text-align: center;
+  margin: 0 auto;
+  padding: 1rem;
+  flex: 1;
+  font-size: 2rem;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.social-icons .icon a {
+  font-size: 5rem;
+  color: var(--text-color);
+  transition: color 0.3s;
+}
+
+.social-icons .icon a:hover {
+  color: var(--main-color); /* Use main-color for consistency */
+}
+
+.footer-text p {
+  font-size: 2.5rem;
+  color: #fff;
+  text-align: center;
+}
+
+.contenue {
+  padding-top: 10rem; /* Adjust for fixed header */
+  padding-bottom: 5rem;
+  text-align: center;
+}
+
+.contenue h3 {
+  font-size: 2.5rem;
+  color: var(--main-color);
+  margin: 0 6rem; /* Adjust margins */
+}
+
+.contenue1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around; /* Use space-around for better distribution */
+  min-height: 60vh; /* Use min-height */
+  background-color: var(--bg-color);
+  padding: 2rem 5%; /* Adjust padding */
+}
+
+.contenue1 img {
+  width: 60rem; /* Adjust width for better balance */
+  max-height: 40rem; /* Use max-height */
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  margin: 0; /* Remove specific margins */
+  border: 0.2rem solid #0ef; 
+  border-radius: 10%; 
+}
+
+.contenue1-txt {
+  font-size: 2.5rem;
+  text-align: left;
+  width: 45%;
+}
+
+.button-container {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.contenue-btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background: var(--main-color);
+  color: var(--second-color);
+  font-size: 1.6rem;
+  font-weight: 600;
+  border-radius: 2rem;
+  transition: .5s;
+  text-decoration: none;
+}
+
+.contenue-btn:hover {
+  background: var(--second-color);
+  color: var(--main-color);
+}
+
+.contenue2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  min-height: 60vh;
+  background-color: var(--second-color);
+  padding: 2rem 5%;
+  
+}
+
+.contenue2 img {
+  width: 60rem; /* Adjust width for better balance */
+  max-height: 350px; /* Use max-height */
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  margin: 0;
+  border: 0.2rem solid #0ef; 
+  border-radius: 10%; 
+}
+
+.contenue2-txt {
+  font-size: 2.5rem;
+  text-align: left;
+  width: 45%;
+}
+/* Tablettes (max 1024px) */
+@media (max-width: 1024px) {
+  html {
+    font-size: 55%; /* Réduit la base pour adapter les textes */
+  }
+
+  .home {
+    flex-direction: column;
+    text-align: center;
+    padding: 5rem 5%;
+  }
+
+  .home-img-cerlce {
+    width: 40vw;
+    height: 40vw;
+    margin-top: 2rem;
+  }
+
+  .about-content {
+    flex-direction: column;
+  }
+
+  .about-img {
+    width: 70%;
+    height: auto;
+    margin: 2rem 0;
+  }
+
+  .portfolio-item {
+    width: 80%;
+  }
+
+  .contenue1,
+  .contenue2 {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contenue1 img,
+  .contenue2 img {
+    width: 80%;
+    max-height: 300px;
+    margin-bottom: 2rem;
+  }
+
+  .contenue1-txt,
+  .contenue2-txt {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* Téléphones (max 768px) */
+@media (max-width: 768px) {
+  html {
+    font-size: 50%;
+  }
+
+  #menu-icon {
+    display: block; /* Montre le menu burger */
+    cursor: pointer;
+  }
+
+  .navbar {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    width: 100%;
+    background: var(--bg-color);
+    flex-direction: column;
+    text-align: center;
+    transition: .3s;
+  }
+
+  .navbar.active {
+    right: 0;
+  }
+
+  .navbar a {
+    display: block;
+    padding: 2rem;
+    font-size: 2rem;
+  }
+
+  .home h1 {
+    font-size: 3rem;
+  }
+
+  .home h1 span {
+    font-size: 4rem;
+  }
+
+  .about-text,
+  .portfolio-item p,
+  .contenue1-txt,
+  .contenue2-txt {
+    font-size: 2rem;
+  }
+
+  .portfolio-item {
+    width: 95%;
+  }
+
+  .timeline-content {
+    max-width: 90%;
+  }
+
+  .contact .contact-content {
+    flex-direction: column;
+  }
+}
+
+.Mon_parcours {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  padding: 5rem 0; /* Add padding for spacing */
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.Mon_parcours p {
+  font-size: 2rem;
+  max-width: 100rem;
+  text-align: justify; /* Justify text for better readability */
+}
+
+/* Petits téléphones (max 480px) */
+@media (max-width: 480px) {
+  html {
+    font-size: 45%;
+  }
+
+  .title {
+    font-size: 6rem;
+  }
+
+  .title-text {
+    font-size: 3rem;
+  }
+
+  .contact h2 {
+    font-size: 3rem;
+  }
+
+  .footer-text p {
+    font-size: 1.6rem;
+  }
+}

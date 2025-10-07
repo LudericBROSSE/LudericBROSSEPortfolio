@@ -337,27 +337,33 @@ body {
   margin-bottom: 4rem;
 }
 
-.contenue1,  {
+/* NOUVEAUX STYLES POUR LES BACKGROUNDS DES SECTIONS CONTENUES */
+.contenue1 {
+  background-color: var(--second-color); /* Gris un peu plus clair */
+  padding: 5rem 5%; /* Ajout de padding pour l'espace intérieur */
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 4rem;
-  margin-bottom: 5rem;
+  margin-bottom: 0; /* Pas de marge entre les sections contiguës */
   flex-wrap: wrap;
-  background: var(--main-color);
 }
-.contenue2{
+
+.contenue2 {
+  background-color: var(--bg-color); /* Gris foncé principal */
+  padding: 5rem 5%; /* Ajout de padding pour l'espace intérieur */
   display: flex;
+  flex-direction: row-reverse; /* Inverse l'ordre pour l'alternance visuelle */
   align-items: center;
   justify-content: center;
   gap: 4rem;
-  margin-bottom: 5rem;
+  margin-bottom: 0; /* Pas de marge entre les sections contiguës */
   flex-wrap: wrap;
-  background: var(--bg-color);
 }
 
 .contenue1-img, .contenue2-img {
   flex: 1;
+  min-width: 300px; /* S'assure que les images ne deviennent pas trop petites */
   max-width: 500px;
 }
 
@@ -371,6 +377,7 @@ body {
 
 .contenue1-txt, .contenue2-txt {
   flex: 1;
+  min-width: 300px; /* S'assure que le texte ne devient pas trop petit */
   max-width: 600px;
   text-align: left;
   font-size: 1.8rem;
@@ -379,6 +386,7 @@ body {
 .contenue1-txt ul, .contenue2-txt ul {
   list-style-position: inside;
   padding-left: 1rem;
+  margin-top: 1rem;
 }
 
 .contenue1-txt li, .contenue2-txt li {
@@ -390,6 +398,7 @@ body {
   display: flex;
   gap: 1.5rem;
   flex-wrap: wrap;
+  justify-content: flex-start; /* Aligne les boutons à gauche dans le bloc de texte */
 }
 
 .contenue-btn {
@@ -408,6 +417,8 @@ body {
   color: var(--main-color);
   border: 1px solid var(--main-color);
 }
+
+
 
 
 /* Contact Section -- MODIFIÉ ICI */

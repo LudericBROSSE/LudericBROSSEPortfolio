@@ -337,7 +337,7 @@ body {
   margin-bottom: 4rem;
 }
 
-.contenue1, .contenue2 {
+.contenue1,  {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -345,9 +345,14 @@ body {
   margin-bottom: 5rem;
   flex-wrap: wrap;
 }
-
-.contenue2 {
-  flex-direction: row-reverse; /* Inverse l'ordre pour l'alternance visuelle */
+.contenue2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  margin-bottom: 5rem;
+  flex-wrap: wrap;
+  background: var(--bg-color);
 }
 
 .contenue1-img, .contenue2-img {

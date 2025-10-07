@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display');
+
 /* Base styles (already present, ensure they are mobile-first or well-structured) */
 * {
   margin: 0;
@@ -54,8 +55,10 @@ h4 {
   font-size: 2rem;
   font-weight: 600;
   cursor: default;
-  margin-left: -100rem;
+  margin-left: -10rem; /* Adjusted for better alignment */
+  color: var(--text-color); /* Added to ensure visibility */
 }
+
 
 .navbar a {
   font-size: 1.5rem;
@@ -63,7 +66,6 @@ h4 {
   transition: .3s;
   font-family: arial, sans-serif;
   padding: 0.5rem 1rem;
-
 }
 
 .navbar a:hover,
@@ -106,14 +108,12 @@ h4 {
   display: flex;
   justify-content: center;
   align-items: center;
-  
 }
 
 .home-img-cerlce img {
   width: 100%;
   min-height: 100%;
   object-fit: cover;
-  margin-left: -1rem;
 }
 
 .social-media a {
@@ -154,9 +154,10 @@ h4 {
   color: var(--main-color);
 }
 
-.home p {
-  font-size: 2rem;
+.home-content p {
+  font-size: 2.2rem; /* Taille de police augmentée */
 }
+
 
 .home h2 {
   font-size: 2.5rem;
@@ -174,7 +175,7 @@ h4 {
   align-items: center;
   background-color: var(--second-color);
   font-family: Arial, sans-serif;
-  padding: 5rem 0; /* Add padding for spacing */
+  padding: 5rem 0;
 }
 
 .title {
@@ -195,58 +196,55 @@ h4 {
   gap: 2rem;
   width: 100%;
   flex-direction: row-reverse;
-  padding: 0 5%; /* Add horizontal padding */
+  padding: 0 5%;
 }
 
-.about-text {
+.about-text p {
   font-size: 2.5rem;
   max-width: 600px;
-  text-align: justify; /* Justify text for better readability */
+  text-align: left; /* Changé de justify à left */
 }
 
 .about-img {
-  width: 45vw; 
-  height: 45vw; 
-  max-width: 100%; 
-  max-height: 100%; 
-  overflow: hidden; 
-  display: flex; 
-  margin-left: -2rem; 
+  width: 45vw;
+  height: 45vw;
+  max-width: 100%;
+  max-height: 100%;
+  overflow: hidden;
+  display: flex;
+  margin-left: -2rem;
   padding: 2rem;
-
 }
 
 .about-img img {
-  width: 100%; 
-  height: auto; 
-  object-fit: cover; 
-  border: 0.2rem solid #0ef; 
-  border-radius: 10%; 
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border: 0.2rem solid #0ef;
+  border-radius: 10%;
 }
-
 
 .Mon_parcours {
   display: flex;
   flex-direction: column;
   align-items: center;
   font-family: Arial, sans-serif;
-  padding: 5rem 0; /* Add padding for spacing */
+  padding: 5rem 2rem; /* Adjusted padding */
 }
 
-.Mon_parcours p {
-  font-size: 2.5rem;
+.Mon_parcours .content p {
+  font-size: 2rem;
   max-width: 100rem;
-  text-align: justify; /* Justify text for better readability */
+  text-align: left; /* Changé de justify à left */
 }
 
 .timeline {
   display: flex;
   justify-content: center;
-  align-items: flex-start; /* Align items to the top */
+  align-items: flex-start;
   gap: 2rem;
   flex-wrap: wrap;
-  padding: 0 5%; /* Add horizontal padding */
-  
+  padding: 0 5%;
 }
 
 .timeline-content {
@@ -255,11 +253,10 @@ h4 {
   align-items: center;
   max-width: 300px;
   text-align: center;
-  background-color: var(--second-color); /* Add background for better visual separation */
+  background-color: var(--second-color);
   padding: 2rem;
-  border-radius: 1rem;
-    border: 0.2rem solid #0ef; 
-  border-radius: 10%; 
+  border: 0.2rem solid #0ef;
+  border-radius: 10%;
 }
 
 .timeline-content h3 {
@@ -269,8 +266,8 @@ h4 {
 }
 
 .timeline-content p {
-  font-size: 2.5rem; /* Adjust font size */
-  margin: 0; /* Remove default paragraph margin */
+  font-size: 2rem; /* Adjusted font size */
+  margin: 0;
   text-align: center;
 }
 
@@ -300,7 +297,7 @@ h4 {
   align-items: center;
   font-family: Arial, sans-serif;
   background-color: var(--second-color);
-  padding: 5rem 0; /* Add padding for spacing */
+  padding: 5rem 0;
 }
 
 .portfolio-content {
@@ -308,7 +305,7 @@ h4 {
   flex-wrap: wrap;
   justify-content: center;
   gap: 2rem;
-  padding: 0 5%; /* Add horizontal padding */
+  padding: 0 5%;
 }
 
 .portfolio-item {
@@ -318,25 +315,26 @@ h4 {
   justify-content: center;
   text-align: center;
   width: 40vw;
-  margin: 0 auto;
-  padding: 2rem; /* Add padding to portfolio items */
-  background-color: var(--bg-color); /* Add background for better visual separation */
+  margin: 0 auto 2rem auto; /* Added bottom margin */
+  padding: 2rem;
+  background-color: var(--bg-color);
   border-radius: 1rem;
 }
 
 .portfolio-item img {
   width: 100%;
-  height: 500px;
+  height: auto; /* Changed for responsiveness */
+  max-height: 500px;
   object-fit: cover;
   transition: transform 0.3s ease;
   margin-top: 5%;
   margin-bottom: 5%;
-  border: 0.2rem solid #0ef; 
-  border-radius: 10%; 
+  border: 0.2rem solid #0ef;
+  border-radius: 10%;
 }
 
 .portfolio-item:hover img {
-  transform: scale(1.05); /* Slightly smaller scale for better fit */
+  transform: scale(1.05);
 }
 
 .portfolio-item h3,
@@ -359,9 +357,9 @@ h4 {
 }
 
 .portfolio-item span {
-  color: #ffcc00;
-  font-size: 2.5rem;
-  font-family: Arial, sans-serif;
+    color: #4d94ff; /* Couleur changée en bleu */
+    font-size: 2.5rem;
+    font-family: Arial, sans-serif;
 }
 
 .contact {
@@ -369,10 +367,10 @@ h4 {
   color: var(--text-color);
   padding: 4rem 0;
   display: flex;
-  flex-direction: column; /* Arrange content vertically */
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 100vh; /* Use min-height */
+  min-height: 100vh;
   text-align: center;
 }
 
@@ -413,7 +411,7 @@ h4 {
 }
 
 .social-icons .icon a:hover {
-  color: var(--main-color); /* Use main-color for consistency */
+  color: var(--main-color);
 }
 
 .footer-text p {
@@ -423,7 +421,7 @@ h4 {
 }
 
 .contenue {
-  padding-top: 10rem; /* Adjust for fixed header */
+  padding-top: 10rem;
   padding-bottom: 5rem;
   text-align: center;
 }
@@ -431,27 +429,27 @@ h4 {
 .contenue h3 {
   font-size: 2.5rem;
   color: var(--main-color);
-  margin: 0 6rem; /* Adjust margins */
+  margin: 0 6rem;
 }
 
 .contenue1 {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around; /* Use space-around for better distribution */
-  min-height: 60vh; /* Use min-height */
+  justify-content: space-around;
+  min-height: 60vh;
   background-color: var(--bg-color);
-  padding: 2rem 5%; /* Adjust padding */
+  padding: 2rem 5%;
 }
 
 .contenue1 img {
-  width: 60rem; /* Adjust width for better balance */
-  max-height: 40rem; /* Use max-height */
+  width: 60rem;
+  max-height: 40rem;
   object-fit: cover;
   transition: transform 0.3s ease;
-  margin: 0; /* Remove specific margins */
-  border: 0.2rem solid #0ef; 
-  border-radius: 10%; 
+  margin: 0;
+  border: 0.2rem solid #0ef;
+  border-radius: 10%;
 }
 
 .contenue1-txt {
@@ -490,17 +488,16 @@ h4 {
   min-height: 60vh;
   background-color: var(--second-color);
   padding: 2rem 5%;
-  
 }
 
 .contenue2 img {
-  width: 60rem; /* Adjust width for better balance */
-  max-height: 350px; /* Use max-height */
+  width: 60rem;
+  max-height: 350px;
   object-fit: cover;
   transition: transform 0.3s ease;
   margin: 0;
-  border: 0.2rem solid #0ef; 
-  border-radius: 10%; 
+  border: 0.2rem solid #0ef;
+  border-radius: 10%;
 }
 
 .contenue2-txt {
@@ -508,10 +505,14 @@ h4 {
   text-align: left;
   width: 45%;
 }
+
+
+/* MEDIA QUERIES */
+
 /* Tablettes (max 1024px) */
 @media (max-width: 1024px) {
   html {
-    font-size: 55%; /* Réduit la base pour adapter les textes */
+    font-size: 55%;
   }
 
   .home {
@@ -566,8 +567,12 @@ h4 {
     font-size: 50%;
   }
 
+  .logo {
+      margin-left: 0;
+  }
+
   #menu-icon {
-    display: block; /* Montre le menu burger */
+    display: block;
     cursor: pointer;
   }
 
@@ -606,6 +611,10 @@ h4 {
   .contenue2-txt {
     font-size: 2rem;
   }
+  
+  .timeline-content p {
+      font-size: 1.8rem;
+  }
 
   .portfolio-item {
     width: 95%;
@@ -618,22 +627,6 @@ h4 {
   .contact .contact-content {
     flex-direction: column;
   }
-}
-
-.Mon_parcours {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-family: Arial, sans-serif;
-  padding: 5rem 0; /* Add padding for spacing */
-  margin-left: 2rem;
-  margin-right: 2rem;
-}
-
-.Mon_parcours p {
-  font-size: 2rem;
-  max-width: 100rem;
-  text-align: justify; /* Justify text for better readability */
 }
 
 /* Petits téléphones (max 480px) */

@@ -152,11 +152,11 @@ body {
 }
 
 .home-content p {
-  font-size: 2.2rem;
+  font-size: 2.5rem;
 }
 
 .home h2 {
-  font-size: 2.5rem;
+  font-size: 2.9rem;
 }
 
 /* Common Title Styles */
@@ -223,7 +223,7 @@ body {
 }
 
 .Mon_parcours .content p {
-  font-size: 2rem;
+  font-size: 2.5rem;
   max-width: 100rem;
   text-align: left;
 }
@@ -257,7 +257,7 @@ body {
 }
 
 .timeline-content p {
-  font-size: 2rem;
+  font-size: 2.5 rem;
   margin: 0;
 }
 

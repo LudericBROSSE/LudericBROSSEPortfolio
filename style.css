@@ -353,7 +353,6 @@ body {
   background-color: var(--bg-color); /* Gris foncé principal */
   padding: 5rem 5%; /* Ajout de padding pour l'espace intérieur */
   display: flex;
-  flex-direction: row-reverse; /* Inverse l'ordre pour l'alternance visuelle */
   align-items: center;
   justify-content: center;
   gap: 4rem;

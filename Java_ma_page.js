@@ -32,8 +32,10 @@ function updateActiveLinkOnScroll() {
   });
 
   // Ferme le menu si un lien est cliqué
-  menuIcon.classList.remove('bx-x');
-  navbar.classList.remove('active');
+  if(navbar.classList.contains('active')){
+    menuIcon.classList.remove('bx-x');
+    navbar.classList.remove('active');
+  }
 }
 
 // Gérer le clic sur les liens pour le défilement fluide

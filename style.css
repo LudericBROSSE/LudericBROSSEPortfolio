@@ -326,6 +326,83 @@ body {
   color: #4d94ff;
   font-size: 2.5rem;
 }
+.contenue {
+  padding: 10rem 5% 5rem;
+  text-align: center;
+}
+
+.contenue h3 {
+  font-size: 2.5rem;
+  color: var(--main-color);
+  margin-bottom: 4rem;
+}
+
+.contenue1, .contenue2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  margin-bottom: 5rem;
+  flex-wrap: wrap;
+}
+
+.contenue2 {
+  flex-direction: row-reverse; /* Inverse l'ordre pour l'alternance visuelle */
+}
+
+.contenue1-img, .contenue2-img {
+  flex: 1;
+  max-width: 500px;
+}
+
+.contenue1-img img, .contenue2-img img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border: 0.2rem solid var(--main-color);
+  border-radius: 1rem;
+}
+
+.contenue1-txt, .contenue2-txt {
+  flex: 1;
+  max-width: 600px;
+  text-align: left;
+  font-size: 1.8rem;
+}
+
+.contenue1-txt ul, .contenue2-txt ul {
+  list-style-position: inside;
+  padding-left: 1rem;
+}
+
+.contenue1-txt li, .contenue2-txt li {
+  margin-bottom: 0.8rem;
+}
+
+.button-container {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.contenue-btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background: var(--main-color);
+  color: var(--second-color);
+  font-size: 1.6rem;
+  font-weight: 600;
+  border-radius: 2rem;
+  transition: .5s;
+}
+
+.contenue-btn:hover {
+  background: var(--second-color);
+  color: var(--main-color);
+  border: 1px solid var(--main-color);
+}
+
 
 /* Contact Section -- MODIFIÉ ICI */
 .Contact {

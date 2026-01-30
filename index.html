@@ -2,95 +2,119 @@
 <html lang="fr">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Portfolio Luderic Brosse</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link href="style.css" rel="stylesheet" type="text/css" />
-    <link rel="icon" href="logo.webp" type="image/webp">
-    <style>
-        .social-media .bx-fade-left {
-            animation-duration: 2s; /* Ralentit l'animation (valeur par défaut : 1s) */
-        }
-    </style>
 </head>
 <body>
     <header class="header">
-        <img src="logo.webp" alt="mon logo" style="height:75px; width:75px;">
-        <a href="#home" class="logo">Portfolio</a>
+        <a href="#" class="logo">Portfolio</a>
         <i class='bx bx-menu' id="menu-icon"></i>
         <nav class="navbar">
             <a href="#home" class="active">Accueil</a>
-            <a href="#Qui_suis_je">Qui suis-je ?</a>
-            <a href="#Mon_parcours">Mon parcours</a>
+            <a href="#Qui_suis_je">Qui suis-je?</a>
+            <a href="#Compétences">Compétences</a> <a href="#Cyber">Spécialisation Cyber</a> <a href="#Mon_parcours">Mon parcours</a>
             <a href="#portfolio">Mon portfolio</a>
             <a href="#Contact">Me contacter</a>
         </nav>
     </header>
 
+    <section class="home" id="home">
+        <div class="home-content">
+            <h1>Bienvenue sur mon portfolio!</h1>
+            <h1><span>Luderic BROSSE</span></h1>
+            <h2><span>Étudiant en 1ère année en </span> BUT Réseaux et Télécommunications</h2>
+            <p><span>Actuellement à la recherche d'un stage technique pour mettre en pratique mes compétences en administration réseaux et découvrir le monde professionnel.</span></p>
+            <div class="social-media">
+                <a href="https://www.instagram.com/luderic_brosse_/" target="_blank"><i class='bx bxl-instagram bx-flip-horizontal'></i></a>
+                <a href="https://www.linkedin.com/in/ludericbrosse/" target="_blank"><i class='bx bxl-linkedin-square'></i></a>
+            </div>
+            <a href="CV_Luderic_BROSSE.pdf" class="btn">Télécharger mon CV</a>
+        </div>
+        <div class="home-img-cerlce">
+            <img src="photo_PRO.jpg" alt="Luderic BROSSE">
+        </div>
+    </section>
 
-<section class="home" id="home">
-    <div class="home-content">
-        <h1>Bienvenue ! Moi c'est</h1>
-        <h1><span>Luderic BROSSE</span></h1>
-        <h2>Étudiant en <span>BUT Réseaux & Télécoms</span></h2>
-        <p>Actuellement en recherche de stage de fin d'année pour mettre mes compétences en administration réseaux au service de votre infrastructure.</p>
-        
-     <div class="social-media">
-        <a href="https://www.linkedin.com/in/ludericbrosse/" target="_blank" ><i class='bx bxl-linkedin-square bx-fade-left' ></i></a>
-      </div>
-      <a href="CV_Luderic_BROSSE.pdf" class="btn">Télécharger mon CV</a>
-    </div></div>
-    <div class="home-img-cerlce">
-      <img src="index_files/imgcv.jpg" alt="photo disponible sur mon CV et sur linkedin">
-    </div>
-  </section>
-
-<section class="Qui_suis_je" id="Qui_suis_je">
-    <div class="title">
-        <h2 class="title-text">Qui suis-je ?</h2>
-    </div>
-    <div class="about-content">
-        <div class="about-text">
-            <p>Étudiant passionné par les systèmes d'information, je combine rigueur technique et curiosité. Originaire de Polynésie, mon parcours m'a appris l'autonomie et la capacité d'adaptation.</p>
-            
-            <div class="stage-highlight" style="border-left: 4px solid var(--main-color); padding-left: 15px; margin-top: 20px;">
-                <h4 style="color: var(--main-color); font-size: 3rem; font-weight: 700;">Objectif Stage</h4>
-                <p>Je recherche une immersion professionnelle de 8 à 10 semaines dès le 7 avril pour approfondir mes acquis en cybersécurité et déploiement réseau.</p>
+    <section class="Qui_suis_je" id="Qui_suis_je">
+        <div class="title">
+            <h2 class="title-text">Qui suis-je?</h2>
+        </div>
+        <div class="about-content">
+            <div class="about-text">
+                <p>Étudiant passionné par l'informatique depuis mon plus jeune âge, j'ai développé des compétences en autodidacte avant d'intégrer le BUT R&T. Originaire de la Polynésie Française, je suis curieux et déterminé à relever de nouveaux défis technologiques.</p>
+                
+                <div class="stage-highlight" style="border-left: 4px solid var(--main-color); padding-left: 15px; margin-top: 20px;">
+                    <h4 style="color: var(--main-color); font-size: 3rem; font-weight: 700;">Objectif Stage</h4>
+                    <p>Je recherche une immersion professionnelle pour approfondir mes acquis en déploiement réseau et support technique.</p>
+                </div>
+            </div>
+            <div class="about-img">
+                <img src="photochien.jpg" alt="photo Luderic">
             </div>
         </div>
-        <div class="about-img">
-            <img src="index_files/photochien.jpg" alt="Portrait">
+    </section>
+
+    <section class="Compétences" id="Compétences" style="background: var(--bg-color); padding: 100px 9%;">
+        <div class="title">
+            <h2 class="title-text">Mes Compétences</h2>
         </div>
-    </div>
-</section>
+        <div class="skills-row" style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
+            <div class="skill-card" style="background: var(--second-color); padding: 20px; border-radius: 10px; width: 250px; text-align: center;">
+                <i class='bx bx-network-chart' style="font-size: 4rem; color: var(--main-color);"></i>
+                <h3 style="font-size: 2rem; color: #fff;">Réseaux</h3>
+                <p style="font-size: 1.4rem;">Configuration Switch/Routeur, Modèle OSI, IP.</p>
+            </div>
+            <div class="skill-card" style="background: var(--second-color); padding: 20px; border-radius: 10px; width: 250px; text-align: center;">
+                <i class='bx bx-code-alt' style="font-size: 4rem; color: var(--main-color);"></i>
+                <h3 style="font-size: 2rem; color: #fff;">Dév</h3>
+                <p style="font-size: 1.4rem;">HTML, CSS, Python, Scripting.</p>
+            </div>
+            <div class="skill-card" style="background: var(--second-color); padding: 20px; border-radius: 10px; width: 250px; text-align: center;">
+                <i class='bx bx-terminal' style="font-size: 4rem; color: var(--main-color);"></i>
+                <h3 style="font-size: 2rem; color: #fff;">Systèmes</h3>
+                <p style="font-size: 1.4rem;">Linux, Windows Server, Virtualisation.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="Cyber" id="Cyber" style="background: var(--second-color); padding: 100px 9%;">
+        <div class="title">
+            <h2 class="title-text">Spécialisation Cyber</h2>
+        </div>
+        <div class="cyber-content" style="text-align: center; max-width: 800px; margin: 0 auto;">
+            <h3 style="color: var(--main-color); font-size: 2.5rem;">Mention : Spécialisé en Cyber-sécurité en 2ème année</h3>
+            <p style="font-size: 1.8rem; margin-top: 20px;">
+                Dès ma deuxième année de BUT, j'intègre le parcours <strong>Cybersécurité</strong> pour me former à la protection des données, 
+                la détection d'intrusions et la sécurisation des infrastructures critiques.
+            </p>
+        </div>
+    </section>
 
     <section class="Mon_parcours" id="Mon_parcours">
         <div class="title">
             <h2 class="title-text">Mon parcours</h2>
         </div>
-        <div class="content">
-            <p>Actuellement étudiant en BUT Réseaux et Télécommunications, je me spécialise dans le développement et l’administration des réseaux. Cette orientation s’est confirmée après l’obtention de mon BAC STI2D, option <a class="SIN" href="https://oniseptv.onisep.fr/video/bac-techno-sti2d-specialite-systeme-dinformation-et-numerique-sin">Système d'Information et Numérique</a> (SIN), obtenu avec la mention Assez Bien.</p>
-            <p>Mon parcours a été marqué par une année de redoublement que j’ai choisie pour renforcer mes bases et mieux m’orienter vers le domaine des infrastructures réseaux et de la cybersécurité. Aujourd’hui, je poursuis mes études à l’IUT de Nice, avec l’objectif clair d’acquérir une expertise solide dans la gestion des réseaux et la sécurité informatique.</p>
-            <p>Je suis actuellement à la recherche d’une alternance dans le domaine du réseau ou de l'administration, tout en restant ouvert aux projets liés au développement. Mon portfolio reflète à la fois mes compétences techniques et ma capacité à m’adapter, progresser et apprendre.</p>
-        </div>
-        <br>
         <div class="timeline">
             <div class="timeline-content">
                 <div class="content">
                     <h3>2022-2023</h3>
-                    <p>Baccalauréat STI2D, spécialité SIN, mention Assez Bien, Lycée AMJ Uturoa Polynésie Française</p>
+                    <p>Baccalauréat STI2D (SIN), Lycée AMJ Uturoa.</p>
                 </div>
             </div>
             <div class="timeline-content">
                 <div class="content">
-                    <h3>2023-2024</h3>
-                    <p>1ère année de BUT R&T soldée par un redoublement, IUT de Nice Côte d'Azur, antenne de Valbonne</p>
+                    <h3>2024-2025</h3>
+                    <p>1ère année BUT R&T - IUT de Nice. <strong>Objectif : Stage technique.</strong></p>
                 </div>
             </div>
             <div class="timeline-content">
                 <div class="content">
-                    <h3>2024-2027</h3>
-                    <p>BUT Réseaux et Télécommunications, IUT de Nice Côte d'Azur, antenne de Valbonne</p>
+                    <h3>2025-2027</h3>
+                    <p>Spécialisation <strong>Cyber-sécurité</strong> (BUT R&T).</p>
                 </div>
             </div>
         </div>
@@ -100,45 +124,43 @@
         <div class="title">
             <h2 class="title-text">Mon portfolio</h2>
         </div>
-        <div class="portfolio-container">
+        <div class="container text-center mt-5">
             <div class="portfolio-item">
-                <a href="reseaux.html">
-                    <img src="index_files/Reseaux.jpg" alt="Cliquer pour ouvrir">
-                </a>
-                <h2>En Réseaux</h2>
-                <p>Ici vous retrouverez tous mes projets réalisés dans la conception et l'administration de <span>réseaux</span>.</p>
+                <img src="Reseaux.jpg" alt="Réseaux" class="clickable-image img-fluid" data-bs-toggle="modal" data-bs-target="#imageModal1">
+                <div class="portfolio-caption">
+                    <h2>1. En Réseaux</h2>
+                    <p>Confection et administration de <span>réseaux</span> locaux.</p>
+                </div>
             </div>
+        </div>
 
+        <div class="container text-center mt-5">
             <div class="portfolio-item">
-                <a href="dev.html">
-                    <img src="index_files/info.jpg" alt="Cliquer pour ouvrir">
-                </a>
-                <h2>En Développement</h2>
-                <p>Ici vous allez retrouver tous les <span>sites</span> et les petits <span>scripts</span> que j'ai réalisés jusqu'à maintenant.</p>
+                <img src="cyber_img.jpg" alt="Cyber" class="clickable-image img-fluid">
+                <div class="portfolio-caption">
+                    <h2>2. En Cyber-Sécurité</h2>
+                    <p>Projets de sécurisation et analyse de vulnérabilités.</p>
+                </div>
             </div>
+        </div>
 
+        <div class="container text-center mt-5">
             <div class="portfolio-item">
-                <a href="telecom.html">
-                    <img src="index_files/telecom.jpg" alt="Cliquer pour ouvrir">
-                </a>
-                <h2>En Télécommunications</h2>
-                <p>Ici vous allez retrouver tous les projets réalisés dans le domaine des <span>Télécommunications</span>.</p>
+                <img src="telecom.jpg" alt="Télécom" class="clickable-image img-fluid" data-bs-toggle="modal" data-bs-target="#imageModal3">
+                <div class="portfolio-caption">
+                    <h2>3. En Télécommunications</h2>
+                    <p>Étude des supports de transmission.</p>
+                </div>
             </div>
+        </div>
 
+        <div class="container text-center mt-5">
             <div class="portfolio-item">
-                <a href="cyber.html">
-                    <img src="index_files/cyber1.jpg" alt="Cliquer pour ouvrir">
-                </a>
-                <h2>En cybersécurité</h2>
-                <p>Ici vous allez retrouver tous les projets réalisés qui <span>concerne la Cybersécurité</span>.</p>
-            </div>
-
-            <div class="portfolio-item">
-                <a href="nontech.html">
-                    <img src="nontech_files/nontech.webp" alt="Cliquer pour ouvrir">
-                </a>
-                <h2>Projets non techniques</h2>
-                <p>Ici vous allez retrouver tous les projets réalisés qui <span>ne sont pas techniques</span>.</p>
+                <img src="info.jpg" alt="Dév" class="clickable-image img-fluid" data-bs-toggle="modal" data-bs-target="#imageModal2">
+                <div class="portfolio-caption">
+                    <h2>4. En Développement</h2>
+                    <p>Scripts Python et <span>sites web</span> interactifs.</p>
+                </div>
             </div>
         </div>
     </section>
@@ -150,19 +172,22 @@
         <div class="contact-content">
             <div class="contact-info">
                 <h2>Informations de contact</h2>
+                <p><i class='bx bx-phone-call'></i> +33 6 58 50 30 41</p>
                 <div class="social-icons">
+                    <div class="icon insta"><a href="https://www.instagram.com/luderic_brosse_/" target="_blank"><i class='bx bxl-instagram'></i></a></div>
                     <div class="icon linkedin"><a href="https://www.linkedin.com/in/ludericbrosse/" target="_blank"><i class='bx bxl-linkedin'></i></a></div>
                     <div class="icon mail"><a href="mailto:proludericbrosse@gmail.com" target="_blank"><i class='bx bx-envelope'></i></a></div>
                 </div>
             </div>
         </div>
-        <footer class="footer">
-            <div class="footer-text">
-                <p>Copyright &copy; 2024 par Luderic BROSSE</p>
-            </div>
-        </footer>
     </section>
-    
+
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2024 par Luderic BROSSE</p>
+        </div>
+    </footer>
+
     <script src="Java_ma_page.js"></script>
 </body>
 </html>

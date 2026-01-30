@@ -18,7 +18,10 @@ p {
   line-height: 1.6; /* Réduit l'effet bloc de texte */
   margin-bottom: 1.5rem;
 }
-
+a {
+    text-decoration: none;
+    color: inherit; /* Garde la couleur du parent par défaut */
+}
 /* Alignement global des sections */
 section {
   padding: 10rem 9% 2rem; /* Espace constant entre les sections */
@@ -273,13 +276,17 @@ body {
   margin: 0;
 }
 
+/* Style pour le lien SIN */
 .SIN {
-  color: #fff;
-  text-decoration: underline;
+    color: #fff;
+    text-decoration: none; /* Enlève le soulignement par défaut */
+    transition: 0.3s;
 }
 
+/* Soulignement UNIQUEMENT au survol pour le SIN */
 .SIN:hover {
-  color: #ffcc00;
+    color: #ffcc00;
+    text-decoration: underline; /* Ajoute le soulignement au passage de la souris */
 }
 
 /* Portfolio Section */

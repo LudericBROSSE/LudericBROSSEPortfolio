@@ -128,7 +128,13 @@ const setupFilter = () => {
         const filterValue = btn.getAttribute('data-filter');
 
         items.forEach(item => {
-          if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
+          if (filterValue === 'all') {
+            if (item.classList.contains('secondary-item')) {
+              item.style.display = 'none';
+            } else {
+              item.style.display = 'flex';
+            }
+          } else if (item.getAttribute('data-category') === filterValue) {
             item.style.display = 'flex';
           } else {
             item.style.display = 'none';

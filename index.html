@@ -29,8 +29,8 @@
         <div class="home-content">
             <h1>Bienvenue sur mon portfolio!</h1>
             <h1><span>Luderic BROSSE</span></h1>
-            <h2><span>Étudiant en 1ère année en </span> BUT Réseaux et Télécommunications</h2>
-            <p><span>Actuellement à la recherche d'un stage technique pour mettre en pratique mes compétences en administration réseaux et découvrir le monde professionnel.</span></p>
+            <h2><span>Étudiant en 2ème année en </span> BUT Réseaux et Télécommunications</h2>
+            <p><span>Suite à mon stage en téléphonie IP à la Mairie de Mouans-Sartoux, je suis actuellement à la recherche d'une alternance pour ma 3ème année (orientée administration réseaux ou cybersécurité).</span></p>
             <div class="social-media">
                 <a href="https://www.linkedin.com/in/ludericbrosse/" target="_blank"><i class='bx bxl-linkedin-square'></i></a>
             </div>
@@ -51,7 +51,7 @@
             </div>
             <div class="about-pro-txt">
                 <h3>Mon Profil Professionnel</h3>
-                <p>Passionné par l'informatique, j'ai développé mes bases en autodidacte avant un Bac STI2D (SIN). Je poursuis en <strong>BUT Réseaux et Télécommunications</strong>. Je suis à la recherche d'une immersion professionnelle (stage) pour structurer mes acquis en déploiement réseau, commutation et support technique.</p>
+                <p>Passionné par l'informatique, j'ai développé mes bases en autodidacte avant un Bac STI2D (SIN). Je poursuis en <strong>BUT Réseaux et Télécommunications</strong>. Après un stage enrichissant en téléphonie IP à la Mairie de Mouans-Sartoux, je suis à la recherche d'une alternance pour ma 3ème année (orientée réseaux/admin ou cybersécurité) afin de consolider mon expérience professionnelle.</p>
             </div>
         </div>
 
@@ -97,6 +97,7 @@
         </div>
 
         <div class="skills-row">
+            <!-- CYBER -->
             <div class="skill-card cyber-card filterable-item" data-category="cyber">
                 <i class='bx bx-search-alt'></i>
                 <h3>Analyse Flux</h3>
@@ -109,28 +110,54 @@
                 <p>Outils Nmap et Nessus.</p>
             </div>
 
+            <div class="skill-card cyber-card filterable-item secondary-item" data-category="cyber" style="display: none;">
+                <i class='bx bx-target-lock'></i>
+                <h3>Pentesting</h3>
+                <p>Tests d'intrusion et vulnérabilités.</p>
+            </div>
+
             <div class="skill-card cyber-card filterable-item" data-category="cyber">
                 <i class='bx bx-shield-quarter'></i>
                 <h3>Sécurité Réseau</h3>
                 <p>ACLs, VPN et protocoles.</p>
             </div>
 
-            <div class="skill-card cyber-card filterable-item" data-category="cyber">
-                <i class='bx bx-target-lock'></i>
-                <h3>Pentesting</h3>
-                <p>Tests d'intrusion et vulnérabilités.</p>
+            <!-- RÉSEAUX -->
+            <div class="skill-card reseaux-card filterable-item" data-category="reseaux">
+                <i class='bx bx-network-chart'></i>
+                <h3>CCNA</h3>
+                <p>Certification et protocoles Cisco.</p>
             </div>
 
-            <div class="skill-card skill-card-default filterable-item" data-category="reseaux">
+            <div class="skill-card reseaux-card filterable-item" data-category="reseaux">
                 <i class='bx bx-shuffle'></i>
                 <h3>Commutation</h3>
                 <p>VLANs, Trunking et STP.</p>
             </div>
 
-            <div class="skill-card skill-card-default filterable-item" data-category="reseaux">
+            <div class="skill-card reseaux-card filterable-item" data-category="reseaux">
                 <i class='bx bx-git-branch'></i>
                 <h3>Routage Cisco</h3>
                 <p>RIP, OSPF et statique.</p>
+            </div>
+
+            <!-- TÉLÉCOMMUNICATIONS -->
+            <div class="skill-card telecom-card filterable-item" data-category="telecom">
+                <i class='bx bx-broadcast'></i>
+                <h3>Antennes & Radio</h3>
+                <p>Étude de propagation et mesures RF.</p>
+            </div>
+
+            <div class="skill-card telecom-card filterable-item" data-category="telecom">
+                <i class='bx bx-transfer-alt'></i>
+                <h3>Fibre Optique</h3>
+                <p>Soudure et calculs de liaisons optiques.</p>
+            </div>
+
+            <div class="skill-card telecom-card filterable-item secondary-item" data-category="telecom" style="display: none;">
+                <i class='bx bx-wifi'></i>
+                <h3>IoT & LoRaWAN</h3>
+                <p>Objets connectés et réseaux longue portée.</p>
             </div>
 
             <div class="skill-card telecom-card filterable-item" data-category="telecom">
@@ -139,22 +166,29 @@
                 <p>Protocoles SIP/RTP et IPBX.</p>
             </div>
 
+            <!-- DÉVELOPPEMENT & SYS -->
+            <div class="skill-card skill-card-default filterable-item" data-category="dev">
+                <i class='bx bx-group'></i>
+                <h3>Active Directory</h3>
+                <p>Gestion d'annuaires et stratégie.</p>
+            </div>
+
             <div class="skill-card skill-card-default filterable-item" data-category="dev">
                 <i class='bx bxl-tux'></i>
                 <h3>Admin Linux</h3>
                 <p>Bash et services DHCP/DNS.</p>
             </div>
 
-            <div class="skill-card skill-card-default filterable-item" data-category="dev">
-                <i class='bx bx-group'></i>
-                <h3>Annuaires</h3>
-                <p>Active Directory & OpenLDAP.</p>
-            </div>
-
-            <div class="skill-card skill-card-default filterable-item" data-category="dev">
+            <div class="skill-card skill-card-default filterable-item secondary-item" data-category="dev" style="display: none;">
                 <i class='bx bx-globe'></i>
                 <h3>Dév Web</h3>
                 <p>HTML, CSS, JS et Bootstrap.</p>
+            </div>
+
+            <div class="skill-card skill-card-default filterable-item" data-category="dev">
+                <i class='bx bxl-docker'></i>
+                <h3>Docker & K8s</h3>
+                <p>Conteneurisation et orchestration.</p>
             </div>
 
             <div class="skill-card skill-card-default filterable-item" data-category="dev">
@@ -164,17 +198,16 @@
             </div>
 
             <div class="skill-card skill-card-default filterable-item" data-category="dev">
-                <i class='bx bxl-python'></i>
-                <h3>Python</h3>
+                <i class='bx bxl-windows'></i>
+                <h3>PowerShell</h3>
                 <p>Scripting et automatisation.</p>
             </div>
 
             <div class="skill-card skill-card-default filterable-item" data-category="dev">
-                <i class='bx bxl-docker'></i>
-                <h3>Docker & K8s</h3>
-                <p>Conteneurisation et orchestration.</p>
+                <i class='bx bxl-python'></i>
+                <h3>Python</h3>
+                <p>Scripting et automatisation.</p>
             </div>
-
         </div>
     </section>
 
@@ -251,13 +284,19 @@
             <div class="timeline-content">
                 <div class="content">
                     <h3>2024-2025</h3>
-                    <p>1ère année BUT R&T - IUT de Nice. <strong>Objectif : Stage technique.</strong></p>
+                    <p>1ère année BUT R&T - IUT de Nice.</p>
                 </div>
             </div>
             <div class="timeline-content">
                 <div class="content">
-                    <h3>2025-2027</h3>
-                    <p>Spécialisation <strong>Cyber-sécurité</strong> (BUT R&T).</p>
+                    <h3>2025-2026</h3>
+                    <p>2ème année BUT R&T, Spécialisation <strong>Cyber-sécurité</strong>. Stage en téléphonie IP à la Mairie de Mouans-Sartoux.</p>
+                </div>
+            </div>
+            <div class="timeline-content">
+                <div class="content">
+                    <h3>2026-2027</h3>
+                    <p>3ème année BUT R&T. <strong>Objectif : Alternance (Administration Réseaux ou Cyber-sécurité).</strong></p>
                 </div>
             </div>
         </div>

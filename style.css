@@ -715,6 +715,10 @@ body {
 .telecom-card i { color: #00ff7f; }
 .telecom-card:hover { box-shadow: 0 0 20px #00ff7f; }
 
+.reseaux-card { border: 1px solid #ff8c00; }
+.reseaux-card i { color: #ff8c00; }
+.reseaux-card:hover { box-shadow: 0 0 20px #ff8c00; }
+
 .skill-card-default { border: 1px solid var(--main-color); }
 .skill-card-default i { color: var(--main-color); }
 .skill-card-default:hover { box-shadow: 0 0 20px var(--main-color); }

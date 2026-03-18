@@ -22,12 +22,21 @@ function updateActiveLinkOnScroll() {
     let id = sec.getAttribute('id');
 
     if (top >= offset && top < offset + height) {
+      let hasMatchingLink = false;
       navLinks.forEach(link => {
-        link.classList.remove('active');
         if (link.getAttribute('href') === '#' + id) {
-          link.classList.add('active');
+          hasMatchingLink = true;
         }
       });
+      
+      if (hasMatchingLink) {
+        navLinks.forEach(link => {
+          link.classList.remove('active');
+          if (link.getAttribute('href') === '#' + id) {
+            link.classList.add('active');
+          }
+        });
+      }
     }
   });
 
@@ -64,13 +73,73 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
+/*------ Animation d'apparition au défilement (Intersection Observer natif) ------*/
+const applyScrollAnimations = () => {
+  const animatedElements = document.querySelectorAll('.section-animate');
 
-/*------ Animation d'apparition au défilement ------*/
-ScrollReveal({
-  reset: true,
-  distance: '80px',
-  duration: 2000,
-  delay: 200
-});
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-visible');
+        observer.unobserve(entry.target); // Animation jouée une seule fois
+      }
+    });
+  }, {
+    threshold: 0.15, // Se déclenche quand 15% de l'élément est visible
+    rootMargin: "0px 0px -50px 0px"
+  });
 
-ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
+  animatedElements.forEach(el => observer.observe(el));
+};
+
+/*------ Bouton Retour en Haut ------*/
+const setupBackToTop = () => {
+  const backToTopBtn = document.getElementById('back-to-top');
+
+  if (backToTopBtn) {
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 300) {
+        backToTopBtn.classList.add('show');
+      } else {
+        backToTopBtn.classList.remove('show');
+      }
+    });
+
+    backToTopBtn.addEventListener('click', () => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+  }
+};
+
+/*------ Filtrage ------*/
+const setupFilter = () => {
+  const filterBtns = document.querySelectorAll('.filter-btn');
+  const items = document.querySelectorAll('.filterable-item');
+
+  if (filterBtns.length > 0 && items.length > 0) {
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        const filterValue = btn.getAttribute('data-filter');
+
+        items.forEach(item => {
+          if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
+            item.style.display = 'flex';
+          } else {
+            item.style.display = 'none';
+          }
+        });
+      });
+    });
+  }
+};
+
+// Initialisation globale
+applyScrollAnimations();
+setupBackToTop();
+setupFilter();

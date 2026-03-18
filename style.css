@@ -61,8 +61,21 @@ body {
   font-size: 2rem;
   font-weight: 600;
   cursor: default;
-  margin-left: -10rem;
   color: var(--text-color);
+}
+
+.header-logo-img {
+  width: 75px;
+  height: 75px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.navbar {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .navbar a {
@@ -196,37 +209,79 @@ body {
   padding: 5rem 0;
 }
 
-.about-content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
-  width: 100%;
-  flex-direction: row-reverse;
-  padding: 0 5%;
+/* Qui Suis-je : Layout Pro & Perso */
+.about-pro-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    margin-bottom: 5rem;
+    flex-wrap: wrap;
+    padding: 0 5%;
+}
+.about-pro-img img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 4px solid var(--main-color);
+    box-shadow: 0 0 15px var(--main-color);
+}
+.about-pro-txt {
+    max-width: 600px;
+}
+.about-pro-txt h3 {
+    font-size: 3rem;
+    color: var(--main-color);
+    margin-bottom: 1.5rem;
+}
+.about-pro-txt p {
+    font-size: 1.8rem;
+    line-height: 1.6;
 }
 
-.about-text p {
-  font-size: 2.5rem;
-  max-width: 600px;
-  text-align: left;
+.about-perso-row {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 0 5%;
 }
-
-.about-img {
-  width: 60vw;
-  max-width: 550px;
-  aspect-ratio: 1 / 1;
-  overflow: hidden;
-  display: flex;
-  padding: 1rem;
+.about-card {
+    background: var(--bg-color);
+    padding: 2.5rem;
+    border-radius: 15px;
+    border-left: 5px solid var(--main-color);
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    flex: 1;
+    min-width: 280px;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
-
-.about-img img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border: 0.2rem solid #0ef;
-  border-radius: 10%;
+.about-card h4 {
+    color: var(--main-color);
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+}
+.about-card p {
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+.about-perso-img {
+    flex: 1;
+    min-width: 280px;
+    max-width: 350px;
+    display: flex;
+}
+.about-perso-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 3px solid var(--main-color);
 }
 
 /* My Journey Section */
@@ -291,7 +346,6 @@ body {
 
 /* Portfolio Section */
 .portfolio {
-  background-color: var(--second-color);
   padding: 5rem 2rem;
 }
 
@@ -579,3 +633,201 @@ body {
     font-size: 1.6rem;
   }
 }
+
+/* =========================================================
+   NOUVEAUX STYLES (Refactoring & Animations)
+   ========================================================= */
+
+/* Classes utilitaires */
+.bg-second {
+    background-color: var(--second-color);
+}
+
+/* "Qui suis-je" highlight */
+.stage-highlight {
+    border-left: 4px solid var(--main-color);
+    padding-left: 15px;
+    margin-top: 20px;
+}
+.stage-highlight h4 {
+    color: var(--main-color);
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+/* Cyber content */
+.cyber-content {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.cyber-content h3 {
+    color: var(--main-color);
+    font-size: 2.5rem;
+}
+.cyber-content p {
+    font-size: 1.8rem;
+    margin-top: 20px;
+}
+
+/* Skills cards */
+.skills-row {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+.skill-card {
+    background: var(--bg-color);
+    padding: 25px;
+    border-radius: 15px;
+    width: 210px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.skill-card:hover {
+    transform: translateY(-10px);
+}
+.skill-card i {
+    font-size: 3.5rem;
+}
+.skill-card h3 {
+    font-size: 1.7rem;
+    color: #fff;
+    margin-top: 15px;
+}
+.skill-card p {
+    font-size: 1.1rem;
+    color: #ccc;
+    margin-top: 10px;
+}
+
+/* Couleurs spécifiques compétences */
+.cyber-card { border: 1px solid #ffcc00; }
+.cyber-card i { color: #ffcc00; }
+.cyber-card:hover { box-shadow: 0 0 20px #ffcc00; }
+
+.telecom-card { border: 1px solid #00ff7f; }
+.telecom-card i { color: #00ff7f; }
+.telecom-card:hover { box-shadow: 0 0 20px #00ff7f; }
+
+.skill-card-default { border: 1px solid var(--main-color); }
+.skill-card-default i { color: var(--main-color); }
+.skill-card-default:hover { box-shadow: 0 0 20px var(--main-color); }
+
+/* Timeline parcours hover effect */
+.timeline-content {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.timeline-content:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px var(--main-color);
+}
+.parcours-content {
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Override Social Icons to match new cleaner setup */
+.Contact .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 2rem;
+}
+.Contact .social-icons a {
+    transition: 0.3s;
+}
+.Contact .social-icons a i {
+    font-size: 5rem;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+.Contact .social-icons a:hover i {
+    color: var(--main-color);
+    transform: scale(1.1);
+    text-shadow: 0 0 15px var(--main-color);
+}
+
+/* Scroll Animations */
+.section-animate {
+    opacity: 0;
+    transform: translateY(60px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+.section-animate.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+.header.animate-on-load {
+    animation: slideDown 1s ease forwards;
+}
+@keyframes slideDown {
+    from { transform: translateY(-100%); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+/* Back to Top CSS */
+.back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: var(--main-color);
+    color: var(--second-color);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.4s ease;
+    z-index: 1000;
+}
+.back-to-top.show {
+    opacity: 1;
+    pointer-events: auto;
+}
+.back-to-top:hover {
+    background: var(--second-color);
+    color: var(--main-color);
+    border: 1px solid var(--main-color);
+    box-shadow: 0 0 15px var(--main-color);
+}
+
+/* Redundant rules replaced above */
+
+/* Menu Filters */
+.filter-menu {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 4rem;
+    flex-wrap: wrap;
+}
+.filter-btn {
+    padding: 0.8rem 2rem;
+    background: transparent;
+    border: 1px solid var(--main-color);
+    border-radius: 20px;
+    color: var(--text-color);
+    font-size: 1.6rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.filter-btn.active, .filter-btn:hover {
+    background: var(--main-color);
+    color: var(--bg-color);
+}
+
+
